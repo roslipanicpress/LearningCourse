@@ -1,0 +1,344 @@
+Windows PowerShell
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.02 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.02 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.02 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.02 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.02 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.02 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.09 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.08 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.03 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.15 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.04 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.05 seconds)
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.02 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.06 seconds)
+Seeding: CategoriesTableSeeder
+Seeded:  CategoriesTableSeeder (0.04 seconds)
+Seeding: ArticlesTableSeeder
+Seeded:  ArticlesTableSeeder (1.04 seconds)
+Database seeding completed successfully.
+PS C:\xampp\htdocs\blog> php artisan migrate
+Nothing to migrate.
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.02 seconds)
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.02 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.02 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.02 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.02 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.02 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.02 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.08 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.07 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.03 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.18 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.03 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.06 seconds)
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.07 seconds)
+Seeding: CategoriesTableSeeder
+Seeded:  CategoriesTableSeeder (0.04 seconds)
+Seeding: ArticlesTableSeeder
+Seeded:  ArticlesTableSeeder (1.1 seconds)
+Database seeding completed successfully.
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.02 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.02 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.03 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.03 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.02 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.02 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.08 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.06 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.05 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.15 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.05 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.05 seconds)
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.02 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.06 seconds)
+Seeding: ArticlesTableSeeder
+
+   InvalidArgumentException  : You requested 1 items, but there are only 0 items available.
+
+  at C:\xampp\htdocs\blog\vendor\laravel\framework\src\Illuminate\Support\Arr.php:476
+    472|
+    473|         $count = count($array);
+    474|
+    475|         if ($requested > $count) {
+  > 476|             throw new InvalidArgumentException(
+    477|                 "You requested {$requested} items, but there are only {$count} items available."
+    478|             );
+    479|         }
+    480|
+
+  Exception trace:
+
+  1   Illuminate\Support\Arr::random([])
+      C:\xampp\htdocs\blog\vendor\laravel\framework\src\Illuminate\Support\Collection.php:875
+
+  2   Illuminate\Support\Collection::random()
+      C:\xampp\htdocs\blog\database\seeds\ArticlesTableSeeder.php:15
+
+  Please use the argument -v to see more details.
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.02 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.02 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.02 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.02 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.03 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.02 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.1 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.08 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.04 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.18 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.04 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.05 seconds)
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+
+  at C:\xampp\htdocs\blog\database\seeds\DatabaseSeeder.php:15
+    11|      */
+    12|     public function run()
+    13|     {
+    14|         // $this->call(UsersTableSeeder::class);
+  > 15|         factory('App\Article')=>times(100)->create();
+    16|         $this ->call(UsersTableSeeder::class);
+    17|         $this->call(CategoriesTableSeeder::class);
+    18|         $this->call(ArticlesTableSeeder::class);
+    19|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("C:\xampp\htdocs\blog\vendor\composer/../../database/seeds/DatabaseSeeder.php")
+      C:\xampp\htdocs\blog\vendor\composer\ClassLoader.php:322
+
+  2   Composer\Autoload\ClassLoader::loadClass("DatabaseSeeder")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.02 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.02 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.02 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.02 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.03 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.02 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.08 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.08 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.04 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.16 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.04 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.04 seconds)
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.02 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.06 seconds)
+Seeding: CategoriesTableSeeder
+Seeded:  CategoriesTableSeeder (0.04 seconds)
+Seeding: ArticlesTableSeeder
+Seeded:  ArticlesTableSeeder (1.01 seconds)
+Database seeding completed successfully.
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.02 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.02 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.02 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.02 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.02 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.02 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.08 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.08 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.05 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.21 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.04 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.04 seconds)
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.02 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.06 seconds)
+Seeding: CategoriesTableSeeder
+Seeded:  CategoriesTableSeeder (0.04 seconds)
+Seeding: ArticlesTableSeeder
+Seeded:  ArticlesTableSeeder (1.09 seconds)
+Database seeding completed successfully.
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.02 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.02 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.02 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.04 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.02 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.02 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.08 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.08 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.04 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.18 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.05 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.06 seconds)
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.02 seconds)
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+
+  at C:\xampp\htdocs\blog\database\seeds\UsersTableSeeder.php:19
+    15|             'name'  => 'Rosli Dhobi',
+    16|             'email' => 'rosli@rosli.net',
+    17|             'role' => 'admin'
+    18|         ]);
+  > 19|         factory('App\User')=>times(30)->create();
+    20|     }
+    21| }
+    22|
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("C:\xampp\htdocs\blog\vendor\composer/../../database/seeds/UsersTableSeeder.php")
+      C:\xampp\htdocs\blog\vendor\composer\ClassLoader.php:322
+
+  2   Composer\Autoload\ClassLoader::loadClass("UsersTableSeeder")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.02 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.02 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.03 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.02 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.02 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.02 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.08 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.07 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.05 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.16 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.05 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.05 seconds)
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.02 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.19 seconds)
+Seeding: CategoriesTableSeeder
+Seeded:  CategoriesTableSeeder (0.04 seconds)
+Seeding: ArticlesTableSeeder
+Seeded:  ArticlesTableSeeder (1.08 seconds)
+Database seeding completed successfully.
+PS C:\xampp\htdocs\blog> php artisan tinker >>>App\Article::onlyTrashed()->find(1)->restore();

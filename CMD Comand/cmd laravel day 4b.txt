@@ -1,0 +1,977 @@
+Windows PowerShell
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+
+PS C:\xampp\htdocs\blog> php artisan serve
+Laravel development server started: http://127.0.0.1:8000
+[Thu Nov 14 09:08:13 2019] 127.0.0.1:50255 [200]: /favicon.ico
+[Thu Nov 14 09:08:40 2019] 127.0.0.1:50263 [200]: /css/blog-home.css
+[Thu Nov 14 09:08:40 2019] 127.0.0.1:50272 [200]: /css/app.css
+[Thu Nov 14 09:08:40 2019] 127.0.0.1:50271 [200]: /js/app.js
+[Thu Nov 14 09:08:42 2019] 127.0.0.1:50288 [200]: /favicon.ico
+[Thu Nov 14 09:10:31 2019] 127.0.0.1:50316 [200]: /css/app.css
+[Thu Nov 14 09:10:31 2019] 127.0.0.1:50318 [200]: /js/app.js
+[Thu Nov 14 09:10:31 2019] 127.0.0.1:50319 [200]: /favicon.ico
+[Thu Nov 14 09:10:58 2019] 127.0.0.1:50330 [200]: /css/app.css
+[Thu Nov 14 09:10:58 2019] 127.0.0.1:50331 [200]: /js/app.js
+[Thu Nov 14 09:10:58 2019] 127.0.0.1:50332 [200]: /favicon.ico
+[Thu Nov 14 09:11:01 2019] 127.0.0.1:50334 [200]: /css/app.css
+[Thu Nov 14 09:11:01 2019] 127.0.0.1:50337 [200]: /js/app.js
+[Thu Nov 14 09:11:01 2019] 127.0.0.1:50338 [200]: /favicon.ico
+[Thu Nov 14 09:11:05 2019] 127.0.0.1:50341 [200]: /css/app.css
+[Thu Nov 14 09:11:05 2019] 127.0.0.1:50345 [200]: /css/blog-home.css
+[Thu Nov 14 09:11:05 2019] 127.0.0.1:50347 [200]: /js/app.js
+[Thu Nov 14 09:11:08 2019] 127.0.0.1:50356 [200]: /favicon.ico
+[Thu Nov 14 09:18:11 2019] 127.0.0.1:50455 [200]: /css/app.css
+[Thu Nov 14 09:18:11 2019] 127.0.0.1:50459 [200]: /js/app.js
+[Thu Nov 14 09:18:12 2019] 127.0.0.1:50460 [200]: /favicon.ico
+[Thu Nov 14 09:46:48 2019] 127.0.0.1:50923 [200]: /css/app.css
+[Thu Nov 14 09:46:48 2019] 127.0.0.1:50926 [200]: /js/app.js
+[Thu Nov 14 09:46:48 2019] 127.0.0.1:50927 [200]: /favicon.ico
+[Thu Nov 14 09:46:50 2019] 127.0.0.1:50929 [200]: /css/app.css
+[Thu Nov 14 09:46:50 2019] 127.0.0.1:50931 [200]: /js/app.js
+[Thu Nov 14 09:46:50 2019] 127.0.0.1:50932 [200]: /favicon.ico
+[Thu Nov 14 09:47:32 2019] 127.0.0.1:50945 [200]: /favicon.ico
+[Thu Nov 14 09:47:38 2019] 127.0.0.1:50950 [200]: /css/app.css
+[Thu Nov 14 09:47:38 2019] 127.0.0.1:50954 [200]: /css/blog-home.css
+[Thu Nov 14 09:47:38 2019] 127.0.0.1:50958 [200]: /js/app.js
+[Thu Nov 14 09:47:41 2019] 127.0.0.1:50965 [200]: /favicon.ico
+[Thu Nov 14 09:47:42 2019] 127.0.0.1:50967 [200]: /css/app.css
+[Thu Nov 14 09:47:42 2019] 127.0.0.1:50969 [200]: /js/app.js
+[Thu Nov 14 09:47:42 2019] 127.0.0.1:50970 [200]: /favicon.ico
+[Thu Nov 14 09:48:05 2019] 127.0.0.1:50977 [200]: /favicon.ico
+[Thu Nov 14 09:48:14 2019] 127.0.0.1:50983 [200]: /favicon.ico
+[Thu Nov 14 09:50:20 2019] 127.0.0.1:51014 [200]: /favicon.ico
+[Thu Nov 14 09:51:30 2019] 127.0.0.1:51035 [200]: /favicon.ico
+[Thu Nov 14 09:53:45 2019] 127.0.0.1:51067 [200]: /favicon.ico
+[Thu Nov 14 09:55:39 2019] 127.0.0.1:51095 [200]: /favicon.ico
+[Thu Nov 14 09:55:44 2019] 127.0.0.1:51101 [200]: /favicon.ico
+[Thu Nov 14 09:55:47 2019] 127.0.0.1:51103 [200]: /css/app.css
+[Thu Nov 14 09:55:47 2019] 127.0.0.1:51106 [200]: /css/blog-post.css
+[Thu Nov 14 09:55:47 2019] 127.0.0.1:51107 [200]: /js/app.js
+[Thu Nov 14 09:55:48 2019] 127.0.0.1:51110 [200]: /favicon.ico
+[Thu Nov 14 09:55:54 2019] 127.0.0.1:51113 [200]: /favicon.ico
+[Thu Nov 14 09:56:42 2019] 127.0.0.1:51125 [200]: /favicon.ico
+[Thu Nov 14 09:57:09 2019] 127.0.0.1:51136 [200]: /css/app.css
+[Thu Nov 14 09:57:09 2019] 127.0.0.1:51139 [200]: /js/app.js
+[Thu Nov 14 09:57:10 2019] 127.0.0.1:51140 [200]: /favicon.ico
+[Thu Nov 14 09:57:51 2019] 127.0.0.1:51152 [200]: /css/app.css
+[Thu Nov 14 09:57:51 2019] 127.0.0.1:51155 [200]: /js/app.js
+[Thu Nov 14 09:57:52 2019] 127.0.0.1:51156 [200]: /favicon.ico
+[Thu Nov 14 09:58:18 2019] 127.0.0.1:51163 [200]: /css/app.css
+[Thu Nov 14 09:58:18 2019] 127.0.0.1:51166 [200]: /js/app.js
+[Thu Nov 14 09:58:18 2019] 127.0.0.1:51167 [200]: /favicon.ico
+[Thu Nov 14 09:58:21 2019] 127.0.0.1:51170 [200]: /css/app.css
+[Thu Nov 14 09:58:21 2019] 127.0.0.1:51173 [200]: /js/app.js
+[Thu Nov 14 09:58:22 2019] 127.0.0.1:51174 [200]: /favicon.ico
+[Thu Nov 14 09:59:30 2019] 127.0.0.1:51193 [200]: /css/app.css
+[Thu Nov 14 09:59:30 2019] 127.0.0.1:51195 [200]: /js/app.js
+[Thu Nov 14 09:59:31 2019] 127.0.0.1:51196 [200]: /favicon.ico
+[Thu Nov 14 10:01:27 2019] 127.0.0.1:51219 [200]: /css/app.css
+[Thu Nov 14 10:01:27 2019] 127.0.0.1:51222 [200]: /js/app.js
+[Thu Nov 14 10:01:28 2019] 127.0.0.1:51223 [200]: /favicon.ico
+[Thu Nov 14 10:01:31 2019] 127.0.0.1:51227 [200]: /css/app.css
+[Thu Nov 14 10:01:31 2019] 127.0.0.1:51229 [200]: /js/app.js
+[Thu Nov 14 10:01:32 2019] 127.0.0.1:51230 [200]: /favicon.ico
+[Thu Nov 14 10:01:36 2019] 127.0.0.1:51233 [200]: /css/app.css
+[Thu Nov 14 10:01:36 2019] 127.0.0.1:51235 [200]: /js/app.js
+[Thu Nov 14 10:01:36 2019] 127.0.0.1:51236 [200]: /favicon.ico
+[Thu Nov 14 10:01:45 2019] 127.0.0.1:51239 [200]: /css/app.css
+[Thu Nov 14 10:01:45 2019] 127.0.0.1:51241 [200]: /js/app.js
+[Thu Nov 14 10:01:45 2019] 127.0.0.1:51242 [200]: /favicon.ico
+[Thu Nov 14 10:01:57 2019] 127.0.0.1:51246 [200]: /css/app.css
+[Thu Nov 14 10:01:57 2019] 127.0.0.1:51249 [200]: /js/app.js
+[Thu Nov 14 10:01:57 2019] 127.0.0.1:51250 [200]: /favicon.ico
+[Thu Nov 14 10:04:20 2019] 127.0.0.1:51283 [200]: /css/app.css
+[Thu Nov 14 10:04:20 2019] 127.0.0.1:51286 [200]: /js/app.js
+[Thu Nov 14 10:04:20 2019] 127.0.0.1:51287 [200]: /favicon.ico
+[Thu Nov 14 10:04:27 2019] 127.0.0.1:51291 [200]: /css/app.css
+[Thu Nov 14 10:04:27 2019] 127.0.0.1:51293 [200]: /js/app.js
+[Thu Nov 14 10:04:28 2019] 127.0.0.1:51294 [200]: /favicon.ico
+[Thu Nov 14 10:04:30 2019] 127.0.0.1:51295 [200]: /css/app.css
+[Thu Nov 14 10:04:30 2019] 127.0.0.1:51298 [200]: /js/app.js
+[Thu Nov 14 10:04:30 2019] 127.0.0.1:51299 [200]: /favicon.ico
+[Thu Nov 14 10:04:32 2019] 127.0.0.1:51301 [200]: /css/app.css
+[Thu Nov 14 10:04:32 2019] 127.0.0.1:51304 [200]: /js/app.js
+[Thu Nov 14 10:04:33 2019] 127.0.0.1:51305 [200]: /favicon.ico
+[Thu Nov 14 10:04:42 2019] 127.0.0.1:51308 [200]: /favicon.ico
+[Thu Nov 14 10:04:43 2019] 127.0.0.1:51309 [200]: /favicon.ico
+[Thu Nov 14 10:04:44 2019] 127.0.0.1:51310 [200]: /favicon.ico
+[Thu Nov 14 10:04:44 2019] 127.0.0.1:51311 [200]: /favicon.ico
+[Thu Nov 14 10:04:51 2019] 127.0.0.1:51313 [200]: /favicon.ico
+[Thu Nov 14 10:04:52 2019] 127.0.0.1:51315 [200]: /favicon.ico
+[Thu Nov 14 10:04:58 2019] 127.0.0.1:51317 [200]: /css/app.css
+[Thu Nov 14 10:04:58 2019] 127.0.0.1:51319 [200]: /js/app.js
+[Thu Nov 14 10:04:59 2019] 127.0.0.1:51321 [200]: /favicon.ico
+[Thu Nov 14 10:16:04 2019] 127.0.0.1:51466 [200]: /favicon.ico
+[Thu Nov 14 10:16:09 2019] 127.0.0.1:51468 [200]: /favicon.ico
+[Thu Nov 14 10:16:10 2019] 127.0.0.1:51469 [200]: /favicon.ico
+[Thu Nov 14 10:16:11 2019] 127.0.0.1:51470 [200]: /favicon.ico
+[Thu Nov 14 10:16:17 2019] 127.0.0.1:51472 [200]: /favicon.ico
+[Thu Nov 14 10:16:17 2019] 127.0.0.1:51473 [200]: /favicon.ico
+[Thu Nov 14 10:16:18 2019] 127.0.0.1:51474 [200]: /favicon.ico
+[Thu Nov 14 10:16:18 2019] 127.0.0.1:51475 [200]: /favicon.ico
+[Thu Nov 14 10:16:19 2019] 127.0.0.1:51476 [200]: /favicon.ico
+[Thu Nov 14 10:16:30 2019] 127.0.0.1:51479 [200]: /css/app.css
+[Thu Nov 14 10:16:30 2019] 127.0.0.1:51482 [200]: /js/app.js
+[Thu Nov 14 10:16:30 2019] 127.0.0.1:51483 [200]: /favicon.ico
+[Thu Nov 14 10:49:20 2019] 127.0.0.1:51913 [200]: /css/app.css
+[Thu Nov 14 10:49:20 2019] 127.0.0.1:51916 [200]: /js/app.js
+[Thu Nov 14 10:49:20 2019] 127.0.0.1:51917 [200]: /favicon.ico
+[Thu Nov 14 10:50:27 2019] 127.0.0.1:51933 [200]: /css/app.css
+[Thu Nov 14 10:50:27 2019] 127.0.0.1:51936 [200]: /js/app.js
+[Thu Nov 14 10:50:27 2019] 127.0.0.1:51937 [200]: /favicon.ico
+[Thu Nov 14 10:55:10 2019] 127.0.0.1:52004 [200]: /css/app.css
+[Thu Nov 14 10:55:10 2019] 127.0.0.1:52007 [200]: /js/app.js
+[Thu Nov 14 10:55:10 2019] 127.0.0.1:52008 [200]: /favicon.ico
+[Thu Nov 14 11:03:23 2019] 127.0.0.1:52123 [200]: /css/app.css
+[Thu Nov 14 11:03:23 2019] 127.0.0.1:52126 [200]: /js/app.js
+[Thu Nov 14 11:03:23 2019] 127.0.0.1:52127 [200]: /favicon.ico
+[Thu Nov 14 11:04:09 2019] 127.0.0.1:52138 [200]: /css/app.css
+[Thu Nov 14 11:04:09 2019] 127.0.0.1:52140 [200]: /js/app.js
+[Thu Nov 14 11:04:09 2019] 127.0.0.1:52142 [200]: /favicon.ico
+[Thu Nov 14 11:04:24 2019] 127.0.0.1:52151 [200]: /favicon.ico
+[Thu Nov 14 11:05:02 2019] 127.0.0.1:52159 [200]: /favicon.ico
+[Thu Nov 14 11:05:17 2019] 127.0.0.1:52169 [200]: /css/app.css
+[Thu Nov 14 11:05:17 2019] 127.0.0.1:52170 [200]: /js/app.js
+[Thu Nov 14 11:05:18 2019] 127.0.0.1:52171 [200]: /favicon.ico
+[Thu Nov 14 11:07:49 2019] 127.0.0.1:52209 [200]: /css/app.css
+[Thu Nov 14 11:07:49 2019] 127.0.0.1:52212 [200]: /js/app.js
+[Thu Nov 14 11:07:50 2019] 127.0.0.1:52213 [200]: /favicon.ico
+[Thu Nov 14 11:11:48 2019] 127.0.0.1:52276 [200]: /favicon.ico
+[Thu Nov 14 11:12:02 2019] 127.0.0.1:52284 [200]: /css/app.css
+[Thu Nov 14 11:12:02 2019] 127.0.0.1:52287 [200]: /js/app.js
+[Thu Nov 14 11:12:02 2019] 127.0.0.1:52288 [200]: /favicon.ico
+[Thu Nov 14 11:12:26 2019] 127.0.0.1:52297 [200]: /favicon.ico
+[Thu Nov 14 11:15:16 2019] 127.0.0.1:52345 [200]: /css/blog-post.css
+[Thu Nov 14 11:15:16 2019] 127.0.0.1:52343 [200]: /images/kDtglZGODWAJKiRDnM9q2AeFaKlDRKMAqrxqiuXk.jpeg
+[Thu Nov 14 11:15:16 2019] 127.0.0.1:52344 [200]: /css/app.css
+[Thu Nov 14 11:15:16 2019] 127.0.0.1:52346 [200]: /js/app.js
+[Thu Nov 14 11:15:17 2019] 127.0.0.1:52347 [200]: /favicon.ico
+[Thu Nov 14 11:15:22 2019] 127.0.0.1:52349 [200]: /css/app.css
+[Thu Nov 14 11:15:22 2019] 127.0.0.1:52351 [200]: /js/app.js
+[Thu Nov 14 11:15:22 2019] 127.0.0.1:52352 [200]: /favicon.ico
+[Thu Nov 14 11:15:48 2019] 127.0.0.1:52364 [200]: /css/app.css
+[Thu Nov 14 11:15:48 2019] 127.0.0.1:52365 [200]: /js/app.js
+[Thu Nov 14 11:15:48 2019] 127.0.0.1:52366 [200]: /favicon.ico
+[Thu Nov 14 11:17:13 2019] 127.0.0.1:52390 [200]: /css/blog-post.css
+[Thu Nov 14 11:17:13 2019] 127.0.0.1:52393 [200]: /js/app.js
+[Thu Nov 14 11:17:13 2019] 127.0.0.1:52391 [200]: /css/app.css
+[Thu Nov 14 11:17:13 2019] 127.0.0.1:52392 [200]: /images/keFwYvZwfQSht4FV4CRgYeO8xsXiz6BEizsQmeWS.jpeg
+[Thu Nov 14 11:17:13 2019] 127.0.0.1:52394 [200]: /favicon.ico
+[Thu Nov 14 11:18:17 2019] 127.0.0.1:52407 [200]: /css/app.css
+[Thu Nov 14 11:18:17 2019] 127.0.0.1:52410 [200]: /js/app.js
+[Thu Nov 14 11:18:17 2019] 127.0.0.1:52411 [200]: /favicon.ico
+[Thu Nov 14 11:35:34 2019] 127.0.0.1:52692 [200]: /favicon.ico
+[Thu Nov 14 11:38:40 2019] 127.0.0.1:52741 [200]: /favicon.ico
+[Thu Nov 14 11:38:42 2019] 127.0.0.1:52742 [200]: /favicon.ico
+[Thu Nov 14 11:38:45 2019] 127.0.0.1:52744 [200]: /css/app.css
+[Thu Nov 14 11:38:45 2019] 127.0.0.1:52746 [200]: /images/keFwYvZwfQSht4FV4CRgYeO8xsXiz6BEizsQmeWS.jpeg
+[Thu Nov 14 11:38:45 2019] 127.0.0.1:52747 [200]: /css/blog-home.css
+[Thu Nov 14 11:38:45 2019] 127.0.0.1:52748 [200]: /images/kDtglZGODWAJKiRDnM9q2AeFaKlDRKMAqrxqiuXk.jpeg
+[Thu Nov 14 11:38:45 2019] 127.0.0.1:52754 [200]: /js/app.js
+[Thu Nov 14 11:38:48 2019] 127.0.0.1:52762 [200]: /favicon.ico
+[Thu Nov 14 11:39:16 2019] 127.0.0.1:52769 [200]: /favicon.ico
+[Thu Nov 14 11:39:18 2019] 127.0.0.1:52780 [200]: /css/app.css
+[Thu Nov 14 11:39:18 2019] 127.0.0.1:52782 [200]: /js/app.js
+[Thu Nov 14 11:39:19 2019] 127.0.0.1:52783 [200]: /favicon.ico
+[Thu Nov 14 11:39:22 2019] 127.0.0.1:52787 [200]: /css/app.css
+[Thu Nov 14 11:39:22 2019] 127.0.0.1:52789 [200]: /js/app.js
+[Thu Nov 14 11:39:22 2019] 127.0.0.1:52790 [200]: /favicon.ico
+[Thu Nov 14 11:41:19 2019] 127.0.0.1:52818 [200]: /css/app.css
+[Thu Nov 14 11:41:19 2019] 127.0.0.1:52821 [200]: /js/app.js
+[Thu Nov 14 11:41:20 2019] 127.0.0.1:52822 [200]: /favicon.ico
+[Thu Nov 14 11:41:25 2019] 127.0.0.1:52828 [200]: /favicon.ico
+[Thu Nov 14 11:42:02 2019] 127.0.0.1:52838 [200]: /favicon.ico
+[Thu Nov 14 11:42:04 2019] 127.0.0.1:52841 [200]: /css/app.css
+[Thu Nov 14 11:42:04 2019] 127.0.0.1:52843 [200]: /js/app.js
+[Thu Nov 14 11:42:04 2019] 127.0.0.1:52844 [200]: /favicon.ico
+[Thu Nov 14 11:42:09 2019] 127.0.0.1:52850 [200]: /favicon.ico
+[Thu Nov 14 11:42:46 2019] 127.0.0.1:52862 [200]: /favicon.ico
+[Thu Nov 14 11:43:34 2019] 127.0.0.1:52877 [200]: /favicon.ico
+[Thu Nov 14 11:44:14 2019] 127.0.0.1:52890 [200]: /favicon.ico
+[Thu Nov 14 11:44:16 2019] 127.0.0.1:52894 [200]: /favicon.ico
+[Thu Nov 14 11:44:18 2019] 127.0.0.1:52897 [200]: /css/app.css
+[Thu Nov 14 11:44:18 2019] 127.0.0.1:52899 [200]: /js/app.js
+[Thu Nov 14 11:44:19 2019] 127.0.0.1:52900 [200]: /favicon.ico
+[Thu Nov 14 11:47:10 2019] 127.0.0.1:52942 [200]: /css/app.css
+[Thu Nov 14 11:47:10 2019] 127.0.0.1:52945 [200]: /js/app.js
+[Thu Nov 14 11:47:10 2019] 127.0.0.1:52946 [200]: /favicon.ico
+[Thu Nov 14 11:47:16 2019] 127.0.0.1:52949 [200]: /favicon.ico
+[Thu Nov 14 11:48:29 2019] 127.0.0.1:52967 [200]: /favicon.ico
+[Thu Nov 14 11:48:51 2019] 127.0.0.1:52980 [200]: /favicon.ico
+[Thu Nov 14 11:50:09 2019] 127.0.0.1:53003 [200]: /favicon.ico
+[Thu Nov 14 11:57:14 2019] 127.0.0.1:53106 [200]: /favicon.ico
+[Thu Nov 14 12:01:30 2019] 127.0.0.1:53175 [200]: /favicon.ico
+[Thu Nov 14 12:02:47 2019] 127.0.0.1:53193 [200]: /favicon.ico
+[Thu Nov 14 12:03:02 2019] 127.0.0.1:53198 [200]: /css/app.css
+[Thu Nov 14 12:03:02 2019] 127.0.0.1:53202 [200]: /js/app.js
+[Thu Nov 14 12:03:03 2019] 127.0.0.1:53203 [200]: /favicon.ico
+[Thu Nov 14 12:04:27 2019] 127.0.0.1:53224 [200]: /favicon.ico
+[Thu Nov 14 12:12:50 2019] 127.0.0.1:53343 [200]: /favicon.ico
+[Thu Nov 14 12:13:13 2019] 127.0.0.1:53356 [200]: /favicon.ico
+[Thu Nov 14 12:13:49 2019] 127.0.0.1:53370 [200]: /favicon.ico
+[Thu Nov 14 12:16:07 2019] 127.0.0.1:53399 [200]: /css/app.css
+[Thu Nov 14 12:16:07 2019] 127.0.0.1:53403 [200]: /js/app.js
+[Thu Nov 14 12:16:07 2019] 127.0.0.1:53404 [200]: /images/keFwYvZwfQSht4FV4CRgYeO8xsXiz6BEizsQmeWS.jpeg
+[Thu Nov 14 12:16:07 2019] 127.0.0.1:53405 [200]: /favicon.ico
+[Thu Nov 14 12:16:15 2019] 127.0.0.1:53408 [200]: /css/app.css
+[Thu Nov 14 12:16:15 2019] 127.0.0.1:53410 [200]: /js/app.js
+[Thu Nov 14 12:16:15 2019] 127.0.0.1:53411 [200]: /favicon.ico
+[Thu Nov 14 12:16:17 2019] 127.0.0.1:53412 [200]: /css/app.css
+[Thu Nov 14 12:16:17 2019] 127.0.0.1:53415 [200]: /js/app.js
+[Thu Nov 14 12:16:17 2019] 127.0.0.1:53416 [200]: /images/keFwYvZwfQSht4FV4CRgYeO8xsXiz6BEizsQmeWS.jpeg
+[Thu Nov 14 12:16:17 2019] 127.0.0.1:53417 [200]: /favicon.ico
+[Thu Nov 14 12:16:53 2019] 127.0.0.1:53430 [200]: /css/app.css
+[Thu Nov 14 12:16:53 2019] 127.0.0.1:53431 [200]: /js/app.js
+[Thu Nov 14 12:16:54 2019] 127.0.0.1:53432 [200]: /favicon.ico
+[Thu Nov 14 12:17:37 2019] 127.0.0.1:53443 [200]: /css/app.css
+[Thu Nov 14 12:17:37 2019] 127.0.0.1:53446 [200]: /js/app.js
+[Thu Nov 14 12:17:38 2019] 127.0.0.1:53447 [200]: /favicon.ico
+[Thu Nov 14 12:17:43 2019] 127.0.0.1:53451 [200]: /favicon.ico
+[Thu Nov 14 12:19:18 2019] 127.0.0.1:53475 [200]: /css/app.css
+[Thu Nov 14 12:19:18 2019] 127.0.0.1:53480 [200]: /images/keFwYvZwfQSht4FV4CRgYeO8xsXiz6BEizsQmeWS.jpeg
+[Thu Nov 14 12:19:18 2019] 127.0.0.1:53479 [200]: /js/app.js
+[Thu Nov 14 12:19:18 2019] 127.0.0.1:53481 [200]: /favicon.ico
+[Thu Nov 14 12:19:26 2019] 127.0.0.1:53484 [200]: /css/app.css
+[Thu Nov 14 12:19:26 2019] 127.0.0.1:53486 [200]: /js/app.js
+[Thu Nov 14 12:19:26 2019] 127.0.0.1:53487 [200]: /favicon.ico
+[Thu Nov 14 12:19:29 2019] 127.0.0.1:53490 [200]: /css/app.css
+[Thu Nov 14 12:19:29 2019] 127.0.0.1:53494 [200]: /images/kDtglZGODWAJKiRDnM9q2AeFaKlDRKMAqrxqiuXk.jpeg
+[Thu Nov 14 12:19:29 2019] 127.0.0.1:53492 [200]: /css/blog-home.css
+[Thu Nov 14 12:19:29 2019] 127.0.0.1:53493 [200]: /images/keFwYvZwfQSht4FV4CRgYeO8xsXiz6BEizsQmeWS.jpeg
+[Thu Nov 14 12:19:29 2019] 127.0.0.1:53501 [200]: /js/app.js
+[Thu Nov 14 12:19:32 2019] 127.0.0.1:53505 [200]: /favicon.ico
+[Thu Nov 14 12:19:37 2019] 127.0.0.1:53508 [200]: /css/app.css
+[Thu Nov 14 12:19:37 2019] 127.0.0.1:53510 [200]: /js/app.js
+[Thu Nov 14 12:19:37 2019] 127.0.0.1:53511 [200]: /favicon.ico
+[Thu Nov 14 12:19:42 2019] 127.0.0.1:53513 [200]: /css/app.css
+[Thu Nov 14 12:19:42 2019] 127.0.0.1:53515 [200]: /js/app.js
+[Thu Nov 14 12:19:42 2019] 127.0.0.1:53516 [200]: /favicon.ico
+[Thu Nov 14 12:19:50 2019] 127.0.0.1:53522 [200]: /favicon.ico
+[Thu Nov 14 12:20:03 2019] 127.0.0.1:53526 [200]: /favicon.ico
+PS C:\xampp\htdocs\blog> php artisan migrate:refresh --seed
+Rolling back: 2019_11_13_160337_create_article_category_table
+Rolled back:  2019_11_13_160337_create_article_category_table (0.15 seconds)
+Rolling back: 2019_11_12_122106_create_categories_table
+Rolled back:  2019_11_12_122106_create_categories_table (0.01 seconds)
+Rolling back: 2019_11_12_112022_create_articles_table
+Rolled back:  2019_11_12_112022_create_articles_table (0.02 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.01 seconds)
+Rolling back: 2014_10_12_100000_create_password_resets_table
+Rolled back:  2014_10_12_100000_create_password_resets_table (0.01 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.01 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.1 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.09 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.04 seconds)
+Migrating: 2019_11_12_112022_create_articles_table
+Migrated:  2019_11_12_112022_create_articles_table (0.18 seconds)
+Migrating: 2019_11_12_122106_create_categories_table
+Migrated:  2019_11_12_122106_create_categories_table (0.04 seconds)
+Migrating: 2019_11_13_160337_create_article_category_table
+Migrated:  2019_11_13_160337_create_article_category_table (0.05 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.94 seconds)
+Seeding: CategoriesTableSeeder
+Seeded:  CategoriesTableSeeder (0.04 seconds)
+Seeding: ArticlesTableSeeder
+Seeded:  ArticlesTableSeeder (1.08 seconds)
+Database seeding completed successfully.
+PS C:\xampp\htdocs\blog> php artisan serve
+Laravel development server started: http://127.0.0.1:8000
+[Thu Nov 14 12:30:40 2019] 127.0.0.1:53681 [200]: /css/app.css
+[Thu Nov 14 12:30:40 2019] 127.0.0.1:53684 [200]: /css/blog-home.css
+[Thu Nov 14 12:30:41 2019] 127.0.0.1:53691 [200]: /js/app.js
+[Thu Nov 14 12:30:43 2019] 127.0.0.1:53697 [200]: /favicon.ico
+[Thu Nov 14 12:30:51 2019] 127.0.0.1:53699 [200]: /favicon.ico
+[Thu Nov 14 12:30:59 2019] 127.0.0.1:53704 [200]: /favicon.ico
+[Thu Nov 14 12:31:02 2019] 127.0.0.1:53708 [200]: /css/app.css
+[Thu Nov 14 12:31:02 2019] 127.0.0.1:53710 [200]: /js/app.js
+[Thu Nov 14 12:31:02 2019] 127.0.0.1:53711 [200]: /favicon.ico
+[Thu Nov 14 12:31:07 2019] 127.0.0.1:53714 [200]: /css/app.css
+[Thu Nov 14 12:31:07 2019] 127.0.0.1:53716 [200]: /js/app.js
+[Thu Nov 14 12:31:07 2019] 127.0.0.1:53717 [200]: /favicon.ico
+[Thu Nov 14 12:31:13 2019] 127.0.0.1:53720 [200]: /favicon.ico
+[Thu Nov 14 12:31:24 2019] 127.0.0.1:53724 [200]: /favicon.ico
+[Thu Nov 14 12:31:25 2019] 127.0.0.1:53727 [200]: /css/app.css
+[Thu Nov 14 12:31:25 2019] 127.0.0.1:53729 [200]: /js/app.js
+[Thu Nov 14 12:31:25 2019] 127.0.0.1:53730 [200]: /favicon.ico
+[Thu Nov 14 12:31:38 2019] 127.0.0.1:53737 [200]: /css/app.css
+[Thu Nov 14 12:31:38 2019] 127.0.0.1:53738 [200]: /js/app.js
+[Thu Nov 14 12:31:38 2019] 127.0.0.1:53739 [200]: /favicon.ico
+[Thu Nov 14 12:31:47 2019] 127.0.0.1:53742 [200]: /css/app.css
+[Thu Nov 14 12:31:47 2019] 127.0.0.1:53745 [200]: /js/app.js
+[Thu Nov 14 12:31:48 2019] 127.0.0.1:53746 [200]: /favicon.ico
+[Thu Nov 14 12:31:52 2019] 127.0.0.1:53749 [200]: /css/app.css
+[Thu Nov 14 12:31:52 2019] 127.0.0.1:53751 [200]: /js/app.js
+[Thu Nov 14 12:31:53 2019] 127.0.0.1:53752 [200]: /favicon.ico
+[Thu Nov 14 12:31:57 2019] 127.0.0.1:53759 [200]: /css/app.css
+[Thu Nov 14 12:31:57 2019] 127.0.0.1:53760 [200]: /js/app.js
+[Thu Nov 14 12:31:57 2019] 127.0.0.1:53761 [200]: /favicon.ico
+[Thu Nov 14 12:32:03 2019] 127.0.0.1:53764 [200]: /favicon.ico
+[Thu Nov 14 12:32:45 2019] 127.0.0.1:53775 [200]: /favicon.ico
+[Thu Nov 14 12:34:23 2019] 127.0.0.1:53803 [200]: /favicon.ico
+[Thu Nov 14 12:34:50 2019] 127.0.0.1:53814 [200]: /css/app.css
+[Thu Nov 14 12:34:50 2019] 127.0.0.1:53818 [200]: /js/app.js
+[Thu Nov 14 12:34:50 2019] 127.0.0.1:53819 [200]: /favicon.ico
+[Thu Nov 14 12:35:14 2019] 127.0.0.1:53831 [200]: /css/blog-post.css
+[Thu Nov 14 12:35:14 2019] 127.0.0.1:53832 [200]: /css/app.css
+[Thu Nov 14 12:35:14 2019] 127.0.0.1:53833 [200]: /images/r0aEmGVNnz6rFgpxjrxgL4jNrYr6vCuHYZr4TuDE.jpeg
+[Thu Nov 14 12:35:14 2019] 127.0.0.1:53834 [200]: /js/app.js
+[Thu Nov 14 12:35:14 2019] 127.0.0.1:53835 [200]: /favicon.ico
+[Thu Nov 14 12:35:27 2019] 127.0.0.1:53838 [200]: /css/app.css
+[Thu Nov 14 12:35:27 2019] 127.0.0.1:53841 [200]: /js/app.js
+[Thu Nov 14 12:35:27 2019] 127.0.0.1:53842 [200]: /favicon.ico
+[Thu Nov 14 12:35:28 2019] 127.0.0.1:53844 [200]: /css/app.css
+[Thu Nov 14 12:35:28 2019] 127.0.0.1:53846 [200]: /js/app.js
+[Thu Nov 14 12:35:29 2019] 127.0.0.1:53847 [200]: /favicon.ico
+[Thu Nov 14 12:35:30 2019] 127.0.0.1:53849 [200]: /css/app.css
+[Thu Nov 14 12:35:30 2019] 127.0.0.1:53851 [200]: /js/app.js
+[Thu Nov 14 12:35:30 2019] 127.0.0.1:53853 [200]: /favicon.ico
+[Thu Nov 14 12:35:34 2019] 127.0.0.1:53855 [200]: /css/app.css
+[Thu Nov 14 12:35:34 2019] 127.0.0.1:53857 [200]: /images/r0aEmGVNnz6rFgpxjrxgL4jNrYr6vCuHYZr4TuDE.jpeg
+[Thu Nov 14 12:35:34 2019] 127.0.0.1:53858 [200]: /js/app.js
+[Thu Nov 14 12:35:34 2019] 127.0.0.1:53859 [200]: /favicon.ico
+[Thu Nov 14 12:35:50 2019] 127.0.0.1:53867 [200]: /css/app.css
+[Thu Nov 14 12:35:50 2019] 127.0.0.1:53868 [200]: /js/app.js
+[Thu Nov 14 12:35:51 2019] 127.0.0.1:53869 [200]: /favicon.ico
+[Thu Nov 14 12:36:13 2019] 127.0.0.1:53878 [200]: /css/app.css
+[Thu Nov 14 12:36:13 2019] 127.0.0.1:53880 [200]: /images/r0aEmGVNnz6rFgpxjrxgL4jNrYr6vCuHYZr4TuDE.jpeg
+[Thu Nov 14 12:36:13 2019] 127.0.0.1:53881 [200]: /js/app.js
+[Thu Nov 14 12:36:14 2019] 127.0.0.1:53882 [200]: /favicon.ico
+[Thu Nov 14 12:36:21 2019] 127.0.0.1:53885 [200]: /css/app.css
+[Thu Nov 14 12:36:21 2019] 127.0.0.1:53887 [200]: /js/app.js
+[Thu Nov 14 12:36:22 2019] 127.0.0.1:53888 [200]: /favicon.ico
+[Thu Nov 14 12:36:26 2019] 127.0.0.1:53893 [200]: /css/app.css
+[Thu Nov 14 12:36:26 2019] 127.0.0.1:53894 [200]: /js/app.js
+[Thu Nov 14 12:36:26 2019] 127.0.0.1:53896 [200]: /favicon.ico
+[Thu Nov 14 12:37:20 2019] 127.0.0.1:53908 [200]: /css/app.css
+[Thu Nov 14 12:37:21 2019] 127.0.0.1:53911 [200]: /js/app.js
+[Thu Nov 14 12:37:21 2019] 127.0.0.1:53912 [200]: /favicon.ico
+[Thu Nov 14 12:37:26 2019] 127.0.0.1:53914 [200]: /css/app.css
+[Thu Nov 14 12:37:26 2019] 127.0.0.1:53918 [200]: /js/app.js
+[Thu Nov 14 12:37:28 2019] 127.0.0.1:53920 [200]: /favicon.ico
+[Thu Nov 14 12:37:32 2019] 127.0.0.1:53924 [200]: /css/app.css
+[Thu Nov 14 12:37:32 2019] 127.0.0.1:53927 [200]: /css/blog-home.css
+[Thu Nov 14 12:37:32 2019] 127.0.0.1:53930 [200]: /js/app.js
+[Thu Nov 14 12:37:35 2019] 127.0.0.1:53937 [200]: /favicon.ico
+[Thu Nov 14 12:38:16 2019] 127.0.0.1:53947 [200]: /css/app.css
+[Thu Nov 14 12:38:16 2019] 127.0.0.1:53952 [200]: /css/blog-home.css
+[Thu Nov 14 12:38:16 2019] 127.0.0.1:53954 [200]: /js/app.js
+[Thu Nov 14 12:38:18 2019] 127.0.0.1:53962 [200]: /favicon.ico
+[Thu Nov 14 12:38:22 2019] 127.0.0.1:53964 [200]: /css/app.css
+[Thu Nov 14 12:38:22 2019] 127.0.0.1:53969 [200]: /css/blog-home.css
+[Thu Nov 14 12:38:22 2019] 127.0.0.1:53971 [200]: /js/app.js
+[Thu Nov 14 12:38:24 2019] 127.0.0.1:53979 [200]: /favicon.ico
+[Thu Nov 14 12:38:51 2019] 127.0.0.1:53985 [200]: /css/app.css
+[Thu Nov 14 12:38:51 2019] 127.0.0.1:53989 [200]: /css/blog-home.css
+[Thu Nov 14 12:38:51 2019] 127.0.0.1:53991 [200]: /js/app.js
+[Thu Nov 14 12:38:53 2019] 127.0.0.1:54000 [200]: /favicon.ico
+[Thu Nov 14 12:39:25 2019] 127.0.0.1:54008 [200]: /css/app.css
+[Thu Nov 14 12:39:25 2019] 127.0.0.1:54011 [200]: /css/blog-home.css
+[Thu Nov 14 12:39:25 2019] 127.0.0.1:54015 [200]: /js/app.js
+[Thu Nov 14 12:39:27 2019] 127.0.0.1:54026 [200]: /favicon.ico
+[Thu Nov 14 12:39:30 2019] 127.0.0.1:54028 [200]: /css/app.css
+[Thu Nov 14 12:39:30 2019] 127.0.0.1:54033 [200]: /css/blog-home.css
+[Thu Nov 14 12:39:30 2019] 127.0.0.1:54038 [200]: /js/app.js
+[Thu Nov 14 12:39:32 2019] 127.0.0.1:54044 [200]: /favicon.ico
+[Thu Nov 14 12:39:34 2019] 127.0.0.1:54046 [200]: /css/app.css
+[Thu Nov 14 12:39:34 2019] 127.0.0.1:54048 [200]: /js/app.js
+[Thu Nov 14 12:39:34 2019] 127.0.0.1:54049 [200]: /favicon.ico
+[Thu Nov 14 12:39:37 2019] 127.0.0.1:54051 [200]: /css/app.css
+[Thu Nov 14 12:39:37 2019] 127.0.0.1:54054 [200]: /js/app.js
+[Thu Nov 14 12:39:37 2019] 127.0.0.1:54055 [200]: /favicon.ico
+[Thu Nov 14 12:39:41 2019] 127.0.0.1:54060 [200]: /css/app.css
+[Thu Nov 14 12:39:41 2019] 127.0.0.1:54061 [200]: /js/app.js
+[Thu Nov 14 12:39:41 2019] 127.0.0.1:54062 [200]: /favicon.ico
+[Thu Nov 14 12:39:59 2019] 127.0.0.1:54067 [200]: /css/app.css
+[Thu Nov 14 12:39:59 2019] 127.0.0.1:54070 [200]: /js/app.js
+[Thu Nov 14 12:40:00 2019] 127.0.0.1:54071 [200]: /favicon.ico
+[Thu Nov 14 12:40:35 2019] 127.0.0.1:54079 [200]: /css/app.css
+[Thu Nov 14 12:40:35 2019] 127.0.0.1:54082 [200]: /js/app.js
+[Thu Nov 14 12:40:36 2019] 127.0.0.1:54083 [200]: /favicon.ico
+[Thu Nov 14 12:40:39 2019] 127.0.0.1:54084 [200]: /css/app.css
+[Thu Nov 14 12:40:39 2019] 127.0.0.1:54087 [200]: /js/app.js
+[Thu Nov 14 12:40:39 2019] 127.0.0.1:54088 [200]: /favicon.ico
+[Thu Nov 14 12:40:42 2019] 127.0.0.1:54091 [200]: /css/app.css
+[Thu Nov 14 12:40:42 2019] 127.0.0.1:54093 [200]: /js/app.js
+[Thu Nov 14 12:40:42 2019] 127.0.0.1:54094 [200]: /favicon.ico
+[Thu Nov 14 12:40:48 2019] 127.0.0.1:54097 [200]: /css/app.css
+[Thu Nov 14 12:40:48 2019] 127.0.0.1:54099 [200]: /js/app.js
+[Thu Nov 14 12:40:48 2019] 127.0.0.1:54100 [200]: /favicon.ico
+[Thu Nov 14 12:40:51 2019] 127.0.0.1:54102 [200]: /css/app.css
+[Thu Nov 14 12:40:51 2019] 127.0.0.1:54104 [200]: /js/app.js
+[Thu Nov 14 12:40:51 2019] 127.0.0.1:54105 [200]: /favicon.ico
+[Thu Nov 14 12:40:55 2019] 127.0.0.1:54108 [200]: /css/app.css
+[Thu Nov 14 12:40:55 2019] 127.0.0.1:54110 [200]: /js/app.js
+[Thu Nov 14 12:40:55 2019] 127.0.0.1:54111 [200]: /favicon.ico
+[Thu Nov 14 12:41:01 2019] 127.0.0.1:54115 [200]: /css/app.css
+[Thu Nov 14 12:41:01 2019] 127.0.0.1:54117 [200]: /js/app.js
+[Thu Nov 14 12:41:01 2019] 127.0.0.1:54119 [200]: /favicon.ico
+[Thu Nov 14 14:02:05 2019] 127.0.0.1:54515 [200]: /css/app.css
+[Thu Nov 14 14:02:05 2019] 127.0.0.1:54518 [200]: /js/app.js
+[Thu Nov 14 14:02:07 2019] 127.0.0.1:54519 [200]: /favicon.ico
+[Thu Nov 14 14:02:23 2019] 127.0.0.1:54524 [200]: /css/app.css
+[Thu Nov 14 14:02:23 2019] 127.0.0.1:54527 [200]: /css/blog-home.css
+[Thu Nov 14 14:02:24 2019] 127.0.0.1:54534 [200]: /js/app.js
+[Thu Nov 14 14:02:26 2019] 127.0.0.1:54540 [200]: /favicon.ico
+[Thu Nov 14 14:02:35 2019] 127.0.0.1:54542 [200]: /css/app.css
+[Thu Nov 14 14:02:35 2019] 127.0.0.1:54545 [200]: /js/app.js
+[Thu Nov 14 14:02:35 2019] 127.0.0.1:54546 [200]: /favicon.ico
+[Thu Nov 14 14:02:37 2019] 127.0.0.1:54548 [200]: /css/app.css
+[Thu Nov 14 14:02:37 2019] 127.0.0.1:54550 [200]: /js/app.js
+[Thu Nov 14 14:02:38 2019] 127.0.0.1:54552 [200]: /favicon.ico
+[Thu Nov 14 14:02:40 2019] 127.0.0.1:54554 [200]: /css/app.css
+[Thu Nov 14 14:02:40 2019] 127.0.0.1:54556 [200]: /js/app.js
+[Thu Nov 14 14:02:40 2019] 127.0.0.1:54557 [200]: /favicon.ico
+[Thu Nov 14 14:03:03 2019] 127.0.0.1:54565 [200]: /css/app.css
+[Thu Nov 14 14:03:03 2019] 127.0.0.1:54569 [200]: /js/app.js
+[Thu Nov 14 14:03:04 2019] 127.0.0.1:54571 [200]: /favicon.ico
+[Thu Nov 14 14:03:12 2019] 127.0.0.1:54578 [200]: /css/app.css
+[Thu Nov 14 14:03:12 2019] 127.0.0.1:54579 [200]: /js/app.js
+[Thu Nov 14 14:03:12 2019] 127.0.0.1:54580 [200]: /favicon.ico
+[Thu Nov 14 14:03:17 2019] 127.0.0.1:54582 [200]: /css/app.css
+[Thu Nov 14 14:03:17 2019] 127.0.0.1:54585 [200]: /js/app.js
+[Thu Nov 14 14:03:17 2019] 127.0.0.1:54586 [200]: /favicon.ico
+[Thu Nov 14 14:04:07 2019] 127.0.0.1:54597 [200]: /css/app.css
+[Thu Nov 14 14:04:07 2019] 127.0.0.1:54600 [200]: /js/app.js
+[Thu Nov 14 14:04:07 2019] 127.0.0.1:54601 [200]: /favicon.ico
+[Thu Nov 14 14:05:04 2019] 127.0.0.1:54613 [200]: /css/app.css
+[Thu Nov 14 14:05:04 2019] 127.0.0.1:54616 [200]: /js/app.js
+[Thu Nov 14 14:05:04 2019] 127.0.0.1:54617 [200]: /favicon.ico
+[Thu Nov 14 14:05:17 2019] 127.0.0.1:54623 [200]: /css/app.css
+[Thu Nov 14 14:05:17 2019] 127.0.0.1:54626 [200]: /js/app.js
+[Thu Nov 14 14:05:17 2019] 127.0.0.1:54627 [200]: /favicon.ico
+[Thu Nov 14 14:05:25 2019] 127.0.0.1:54630 [200]: /css/app.css
+[Thu Nov 14 14:05:25 2019] 127.0.0.1:54632 [200]: /js/app.js
+[Thu Nov 14 14:05:25 2019] 127.0.0.1:54633 [200]: /favicon.ico
+[Thu Nov 14 14:05:37 2019] 127.0.0.1:54638 [200]: /css/app.css
+[Thu Nov 14 14:05:37 2019] 127.0.0.1:54640 [200]: /js/app.js
+[Thu Nov 14 14:05:37 2019] 127.0.0.1:54641 [200]: /favicon.ico
+[Thu Nov 14 14:06:33 2019] 127.0.0.1:54655 [200]: /css/app.css
+[Thu Nov 14 14:06:33 2019] 127.0.0.1:54658 [200]: /js/app.js
+[Thu Nov 14 14:06:33 2019] 127.0.0.1:54659 [200]: /favicon.ico
+[Thu Nov 14 14:07:06 2019] 127.0.0.1:54672 [200]: /css/app.css
+[Thu Nov 14 14:07:06 2019] 127.0.0.1:54673 [200]: /js/app.js
+[Thu Nov 14 14:07:07 2019] 127.0.0.1:54674 [200]: /favicon.ico
+[Thu Nov 14 14:07:09 2019] 127.0.0.1:54679 [200]: /css/app.css
+[Thu Nov 14 14:07:09 2019] 127.0.0.1:54680 [200]: /js/app.js
+[Thu Nov 14 14:07:09 2019] 127.0.0.1:54681 [200]: /favicon.ico
+[Thu Nov 14 14:07:11 2019] 127.0.0.1:54687 [200]: /css/app.css
+[Thu Nov 14 14:07:11 2019] 127.0.0.1:54688 [200]: /js/app.js
+[Thu Nov 14 14:07:11 2019] 127.0.0.1:54689 [200]: /favicon.ico
+[Thu Nov 14 14:07:14 2019] 127.0.0.1:54693 [200]: /css/app.css
+[Thu Nov 14 14:07:14 2019] 127.0.0.1:54695 [200]: /js/app.js
+[Thu Nov 14 14:07:15 2019] 127.0.0.1:54696 [200]: /favicon.ico
+[Thu Nov 14 14:07:18 2019] 127.0.0.1:54697 [200]: /css/app.css
+[Thu Nov 14 14:07:18 2019] 127.0.0.1:54700 [200]: /js/app.js
+[Thu Nov 14 14:07:18 2019] 127.0.0.1:54701 [200]: /favicon.ico
+[Thu Nov 14 14:07:21 2019] 127.0.0.1:54704 [200]: /css/app.css
+[Thu Nov 14 14:07:21 2019] 127.0.0.1:54706 [200]: /js/app.js
+[Thu Nov 14 14:07:21 2019] 127.0.0.1:54707 [200]: /favicon.ico
+[Thu Nov 14 14:07:24 2019] 127.0.0.1:54709 [200]: /css/app.css
+[Thu Nov 14 14:07:24 2019] 127.0.0.1:54711 [200]: /js/app.js
+[Thu Nov 14 14:07:24 2019] 127.0.0.1:54712 [200]: /favicon.ico
+[Thu Nov 14 14:07:26 2019] 127.0.0.1:54715 [200]: /css/app.css
+[Thu Nov 14 14:07:26 2019] 127.0.0.1:54717 [200]: /js/app.js
+[Thu Nov 14 14:07:27 2019] 127.0.0.1:54718 [200]: /favicon.ico
+[Thu Nov 14 14:07:29 2019] 127.0.0.1:54720 [200]: /css/app.css
+[Thu Nov 14 14:07:29 2019] 127.0.0.1:54722 [200]: /js/app.js
+[Thu Nov 14 14:07:29 2019] 127.0.0.1:54723 [200]: /favicon.ico
+[Thu Nov 14 14:07:34 2019] 127.0.0.1:54726 [200]: /css/app.css
+[Thu Nov 14 14:07:34 2019] 127.0.0.1:54728 [200]: /js/app.js
+[Thu Nov 14 14:07:34 2019] 127.0.0.1:54729 [200]: /favicon.ico
+[Thu Nov 14 14:07:37 2019] 127.0.0.1:54730 [200]: /css/app.css
+[Thu Nov 14 14:07:37 2019] 127.0.0.1:54733 [200]: /js/app.js
+[Thu Nov 14 14:07:38 2019] 127.0.0.1:54734 [200]: /favicon.ico
+[Thu Nov 14 14:08:22 2019] 127.0.0.1:54745 [200]: /css/app.css
+[Thu Nov 14 14:08:22 2019] 127.0.0.1:54748 [200]: /js/app.js
+[Thu Nov 14 14:08:24 2019] 127.0.0.1:54751 [200]: /favicon.ico
+[Thu Nov 14 14:08:52 2019] 127.0.0.1:54760 [200]: /css/app.css
+[Thu Nov 14 14:08:52 2019] 127.0.0.1:54761 [200]: /js/app.js
+[Thu Nov 14 14:08:52 2019] 127.0.0.1:54762 [200]: /favicon.ico
+[Thu Nov 14 14:09:27 2019] 127.0.0.1:54771 [200]: /css/app.css
+[Thu Nov 14 14:09:27 2019] 127.0.0.1:54774 [200]: /js/app.js
+[Thu Nov 14 14:09:28 2019] 127.0.0.1:54775 [200]: /favicon.ico
+[Thu Nov 14 14:12:07 2019] 127.0.0.1:54809 [200]: /css/app.css
+[Thu Nov 14 14:12:07 2019] 127.0.0.1:54812 [200]: /js/app.js
+[Thu Nov 14 14:12:08 2019] 127.0.0.1:54813 [200]: /favicon.ico
+[Thu Nov 14 14:12:11 2019] 127.0.0.1:54815 [200]: /css/app.css
+[Thu Nov 14 14:12:11 2019] 127.0.0.1:54817 [200]: /js/app.js
+[Thu Nov 14 14:12:11 2019] 127.0.0.1:54818 [200]: /favicon.ico
+[Thu Nov 14 14:12:36 2019] 127.0.0.1:54833 [200]: /css/app.css
+[Thu Nov 14 14:12:36 2019] 127.0.0.1:54834 [200]: /js/app.js
+[Thu Nov 14 14:12:37 2019] 127.0.0.1:54836 [200]: /favicon.ico
+[Thu Nov 14 14:12:51 2019] 127.0.0.1:54840 [200]: /css/app.css
+[Thu Nov 14 14:12:51 2019] 127.0.0.1:54843 [200]: /js/app.js
+[Thu Nov 14 14:12:53 2019] 127.0.0.1:54845 [200]: /favicon.ico
+[Thu Nov 14 14:13:15 2019] 127.0.0.1:54854 [200]: /css/app.css
+[Thu Nov 14 14:13:15 2019] 127.0.0.1:54855 [200]: /js/app.js
+[Thu Nov 14 14:13:15 2019] 127.0.0.1:54856 [200]: /favicon.ico
+[Thu Nov 14 14:13:31 2019] 127.0.0.1:54863 [200]: /css/app.css
+[Thu Nov 14 14:13:31 2019] 127.0.0.1:54865 [200]: /js/app.js
+[Thu Nov 14 14:13:31 2019] 127.0.0.1:54866 [200]: /favicon.ico
+[Thu Nov 14 14:13:37 2019] 127.0.0.1:54868 [200]: /css/app.css
+[Thu Nov 14 14:13:37 2019] 127.0.0.1:54870 [200]: /js/app.js
+[Thu Nov 14 14:13:37 2019] 127.0.0.1:54872 [200]: /favicon.ico
+[Thu Nov 14 14:13:42 2019] 127.0.0.1:54874 [200]: /css/app.css
+[Thu Nov 14 14:13:42 2019] 127.0.0.1:54876 [200]: /js/app.js
+[Thu Nov 14 14:13:43 2019] 127.0.0.1:54877 [200]: /favicon.ico
+[Thu Nov 14 14:13:46 2019] 127.0.0.1:54879 [200]: /css/app.css
+[Thu Nov 14 14:13:46 2019] 127.0.0.1:54882 [200]: /js/app.js
+[Thu Nov 14 14:13:46 2019] 127.0.0.1:54883 [200]: /favicon.ico
+[Thu Nov 14 14:13:52 2019] 127.0.0.1:54884 [200]: /css/app.css
+[Thu Nov 14 14:13:52 2019] 127.0.0.1:54888 [200]: /js/app.js
+[Thu Nov 14 14:13:52 2019] 127.0.0.1:54889 [200]: /favicon.ico
+[Thu Nov 14 14:13:55 2019] 127.0.0.1:54891 [200]: /css/app.css
+[Thu Nov 14 14:13:55 2019] 127.0.0.1:54893 [200]: /js/app.js
+[Thu Nov 14 14:13:55 2019] 127.0.0.1:54894 [200]: /favicon.ico
+[Thu Nov 14 14:13:58 2019] 127.0.0.1:54896 [200]: /css/app.css
+[Thu Nov 14 14:13:58 2019] 127.0.0.1:54898 [200]: /js/app.js
+[Thu Nov 14 14:13:58 2019] 127.0.0.1:54900 [200]: /favicon.ico
+[Thu Nov 14 14:14:01 2019] 127.0.0.1:54902 [200]: /css/app.css
+[Thu Nov 14 14:14:01 2019] 127.0.0.1:54905 [200]: /js/app.js
+[Thu Nov 14 14:14:02 2019] 127.0.0.1:54906 [200]: /favicon.ico
+[Thu Nov 14 14:14:04 2019] 127.0.0.1:54908 [200]: /css/app.css
+[Thu Nov 14 14:14:04 2019] 127.0.0.1:54910 [200]: /js/app.js
+[Thu Nov 14 14:14:05 2019] 127.0.0.1:54911 [200]: /favicon.ico
+[Thu Nov 14 14:14:07 2019] 127.0.0.1:54914 [200]: /css/app.css
+[Thu Nov 14 14:14:07 2019] 127.0.0.1:54916 [200]: /js/app.js
+[Thu Nov 14 14:14:07 2019] 127.0.0.1:54917 [200]: /favicon.ico
+[Thu Nov 14 14:14:12 2019] 127.0.0.1:54919 [200]: /css/app.css
+[Thu Nov 14 14:14:12 2019] 127.0.0.1:54921 [200]: /js/app.js
+[Thu Nov 14 14:14:13 2019] 127.0.0.1:54923 [200]: /favicon.ico
+[Thu Nov 14 14:14:15 2019] 127.0.0.1:54924 [200]: /css/app.css
+[Thu Nov 14 14:14:15 2019] 127.0.0.1:54927 [200]: /js/app.js
+[Thu Nov 14 14:14:15 2019] 127.0.0.1:54928 [200]: /favicon.ico
+[Thu Nov 14 14:14:18 2019] 127.0.0.1:54929 [200]: /css/app.css
+[Thu Nov 14 14:14:18 2019] 127.0.0.1:54932 [200]: /js/app.js
+[Thu Nov 14 14:14:19 2019] 127.0.0.1:54933 [200]: /favicon.ico
+[Thu Nov 14 14:15:56 2019] 127.0.0.1:54955 [200]: /css/app.css
+[Thu Nov 14 14:15:56 2019] 127.0.0.1:54958 [200]: /js/app.js
+[Thu Nov 14 14:15:56 2019] 127.0.0.1:54959 [200]: /favicon.ico
+[Thu Nov 14 14:16:00 2019] 127.0.0.1:54965 [200]: /css/app.css
+[Thu Nov 14 14:16:00 2019] 127.0.0.1:54966 [200]: /js/app.js
+[Thu Nov 14 14:16:00 2019] 127.0.0.1:54967 [200]: /favicon.ico
+[Thu Nov 14 14:16:06 2019] 127.0.0.1:54975 [200]: /css/app.css
+[Thu Nov 14 14:16:06 2019] 127.0.0.1:54976 [200]: /js/app.js
+[Thu Nov 14 14:16:06 2019] 127.0.0.1:54977 [200]: /favicon.ico
+[Thu Nov 14 14:16:14 2019] 127.0.0.1:54980 [200]: /css/app.css
+[Thu Nov 14 14:16:14 2019] 127.0.0.1:54982 [200]: /js/app.js
+[Thu Nov 14 14:16:14 2019] 127.0.0.1:54983 [200]: /favicon.ico
+[Thu Nov 14 14:16:18 2019] 127.0.0.1:54985 [200]: /css/app.css
+[Thu Nov 14 14:16:18 2019] 127.0.0.1:54987 [200]: /js/app.js
+[Thu Nov 14 14:16:18 2019] 127.0.0.1:54988 [200]: /favicon.ico
+[Thu Nov 14 14:16:25 2019] 127.0.0.1:54991 [200]: /css/app.css
+[Thu Nov 14 14:16:25 2019] 127.0.0.1:54993 [200]: /js/app.js
+[Thu Nov 14 14:16:26 2019] 127.0.0.1:54994 [200]: /favicon.ico
+[Thu Nov 14 14:16:31 2019] 127.0.0.1:54997 [200]: /css/app.css
+[Thu Nov 14 14:16:31 2019] 127.0.0.1:55001 [200]: /js/app.js
+[Thu Nov 14 14:16:32 2019] 127.0.0.1:55003 [200]: /favicon.ico
+[Thu Nov 14 14:16:38 2019] 127.0.0.1:55009 [200]: /css/app.css
+[Thu Nov 14 14:16:38 2019] 127.0.0.1:55010 [200]: /js/app.js
+[Thu Nov 14 14:16:38 2019] 127.0.0.1:55011 [200]: /favicon.ico
+[Thu Nov 14 14:16:43 2019] 127.0.0.1:55014 [200]: /css/app.css
+[Thu Nov 14 14:16:43 2019] 127.0.0.1:55017 [200]: /js/app.js
+[Thu Nov 14 14:16:44 2019] 127.0.0.1:55018 [200]: /favicon.ico
+[Thu Nov 14 14:19:07 2019] 127.0.0.1:55051 [200]: /css/app.css
+[Thu Nov 14 14:19:07 2019] 127.0.0.1:55055 [200]: /js/app.js
+[Thu Nov 14 14:19:08 2019] 127.0.0.1:55057 [200]: /favicon.ico
+[Thu Nov 14 14:19:55 2019] 127.0.0.1:55071 [200]: /css/app.css
+[Thu Nov 14 14:19:55 2019] 127.0.0.1:55072 [200]: /js/app.js
+[Thu Nov 14 14:19:56 2019] 127.0.0.1:55073 [200]: /favicon.ico
+[Thu Nov 14 14:26:00 2019] 127.0.0.1:55168 [200]: /favicon.ico
+[Thu Nov 14 14:30:30 2019] 127.0.0.1:55233 [200]: /css/app.css
+[Thu Nov 14 14:30:30 2019] 127.0.0.1:55237 [200]: /js/app.js
+[Thu Nov 14 14:30:30 2019] 127.0.0.1:55238 [200]: /favicon.ico
+[Thu Nov 14 14:30:35 2019] 127.0.0.1:55245 [200]: /css/app.css
+[Thu Nov 14 14:30:35 2019] 127.0.0.1:55246 [200]: /js/app.js
+[Thu Nov 14 14:30:35 2019] 127.0.0.1:55247 [200]: /favicon.ico
+[Thu Nov 14 14:30:44 2019] 127.0.0.1:55253 [200]: /css/app.css
+[Thu Nov 14 14:30:44 2019] 127.0.0.1:55254 [200]: /js/app.js
+[Thu Nov 14 14:30:45 2019] 127.0.0.1:55255 [200]: /favicon.ico
+[Thu Nov 14 14:31:05 2019] 127.0.0.1:55265 [200]: /css/app.css
+[Thu Nov 14 14:31:05 2019] 127.0.0.1:55266 [200]: /js/app.js
+[Thu Nov 14 14:31:06 2019] 127.0.0.1:55267 [200]: /favicon.ico
+[Thu Nov 14 14:31:34 2019] 127.0.0.1:55278 [200]: /css/app.css
+[Thu Nov 14 14:31:34 2019] 127.0.0.1:55279 [200]: /js/app.js
+[Thu Nov 14 14:31:35 2019] 127.0.0.1:55280 [200]: /favicon.ico
+[Thu Nov 14 14:32:17 2019] 127.0.0.1:55295 [200]: /css/app.css
+[Thu Nov 14 14:32:17 2019] 127.0.0.1:55296 [200]: /js/app.js
+[Thu Nov 14 14:32:17 2019] 127.0.0.1:55297 [200]: /favicon.ico
+[Thu Nov 14 14:36:57 2019] 127.0.0.1:55366 [200]: /favicon.ico
+[Thu Nov 14 14:37:04 2019] 127.0.0.1:55374 [200]: /css/app.css
+[Thu Nov 14 14:37:04 2019] 127.0.0.1:55376 [200]: /js/app.js
+[Thu Nov 14 14:37:05 2019] 127.0.0.1:55377 [200]: /favicon.ico
+[Thu Nov 14 14:37:14 2019] 127.0.0.1:55380 [200]: /favicon.ico
+[Thu Nov 14 14:37:16 2019] 127.0.0.1:55382 [200]: /css/app.css
+[Thu Nov 14 14:37:16 2019] 127.0.0.1:55384 [200]: /js/app.js
+[Thu Nov 14 14:37:16 2019] 127.0.0.1:55385 [200]: /favicon.ico
+PS C:\xampp\htdocs\blog> php artisan make:migration alter_users_table_add_role --table=users
+Created Migration: 2019_11_14_144635_alter_users_table_add_role
+PS C:\xampp\htdocs\blog> php artisan migrate
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+PS C:\xampp\htdocs\blog> php artisan migrate:roleback
+
+
+  Command "migrate:roleback" is not defined.
+
+  Did you mean one of these?
+      migrate
+      migrate:fresh
+      migrate:install
+      migrate:refresh
+      migrate:reset
+      migrate:rollback
+      migrate:status
+
+
+PS C:\xampp\htdocs\blog> php artisan migrate:rolback
+
+
+  Command "migrate:rolback" is not defined.
+
+  Did you mean one of these?
+      migrate
+      migrate:fresh
+      migrate:install
+      migrate:refresh
+      migrate:reset
+      migrate:rollback
+      migrate:status
+
+
+PS C:\xampp\htdocs\blog> php artisan migrate:rollback
+Rolling back: 2019_11_14_144635_alter_users_table_add_role
+Rolled back:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+PS C:\xampp\htdocs\blog> php artisan migrate
+Migrating: 2019_11_14_144635_alter_users_table_add_role
+Migrated:  2019_11_14_144635_alter_users_table_add_role (0.03 seconds)
+PS C:\xampp\htdocs\blog> php artisan serve
+Laravel development server started: http://127.0.0.1:8000
+[Thu Nov 14 14:58:47 2019] 127.0.0.1:55702 [200]: /css/app.css
+[Thu Nov 14 14:58:47 2019] 127.0.0.1:55705 [200]: /js/app.js
+[Thu Nov 14 14:58:47 2019] 127.0.0.1:55706 [200]: /favicon.ico
+PS C:\xampp\htdocs\blog> php artisan make:policy ArticlePolicy
+Policy created successfully.
+PS C:\xampp\htdocs\blog> php artisan serve
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected ';', expecting ']'
+
+  at C:\xampp\htdocs\blog\app\Providers\AuthServiceProvider.php:17
+    13|      * @var array
+    14|      */
+    15|     protected $policies = [
+    16|         // 'App\Model' => 'App\Policies\ModelPolicy',
+  > 17|         'App\Article' => 'App\Policies\ArticlePolicy';
+    18|     ];
+    19|
+    20|     /**
+    21|      * Register any authentication / authorization services.
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("C:\xampp\htdocs\blog\vendor\composer/../../app/Providers/AuthServiceProvider.php")
+      C:\xampp\htdocs\blog\vendor\composer\ClassLoader.php:322
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Providers\AuthServiceProvider")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+PS C:\xampp\htdocs\blog> php artisan serve
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected ';', expecting ']'
+
+  at C:\xampp\htdocs\blog\app\Providers\AuthServiceProvider.php:17
+    13|      * @var array
+    14|      */
+    15|     protected $policies = [
+    16|         // 'App\Model' => 'App\Policies\ModelPolicy',
+  > 17|         'App\Article' => 'App\Policies\ArticlePolicy';
+    18|     ];
+    19|
+    20|     /**
+    21|      * Register any authentication / authorization services.
+
+  Exception trace:
+
+  1   Composer\Autoload\includeFile("C:\xampp\htdocs\blog\vendor\composer/../../app/Providers/AuthServiceProvider.php")
+      C:\xampp\htdocs\blog\vendor\composer\ClassLoader.php:322
+
+  2   Composer\Autoload\ClassLoader::loadClass("App\Providers\AuthServiceProvider")
+      [internal]:0
+
+  Please use the argument -v to see more details.
+PS C:\xampp\htdocs\blog> php artisan serve
+Laravel development server started: http://127.0.0.1:8000
+[Thu Nov 14 15:16:35 2019] 127.0.0.1:55985 [200]: /css/app.css
+[Thu Nov 14 15:16:35 2019] 127.0.0.1:55990 [200]: /css/blog-home.css
+[Thu Nov 14 15:16:35 2019] 127.0.0.1:55992 [200]: /js/app.js
+[Thu Nov 14 15:16:41 2019] 127.0.0.1:56002 [200]: /favicon.ico
+[Thu Nov 14 15:17:28 2019] 127.0.0.1:56017 [200]: /css/app.css
+[Thu Nov 14 15:17:28 2019] 127.0.0.1:56018 [200]: /css/blog-home.css
+[Thu Nov 14 15:17:28 2019] 127.0.0.1:56021 [200]: /js/app.js
+[Thu Nov 14 15:17:30 2019] 127.0.0.1:56031 [200]: /css/app.css
+[Thu Nov 14 15:17:30 2019] 127.0.0.1:56032 [200]: /js/app.js
+[Thu Nov 14 15:17:31 2019] 127.0.0.1:56033 [200]: /favicon.ico
+[Thu Nov 14 15:18:14 2019] 127.0.0.1:56047 [200]: /css/app.css
+[Thu Nov 14 15:18:14 2019] 127.0.0.1:56048 [200]: /js/app.js
+[Thu Nov 14 15:18:14 2019] 127.0.0.1:56049 [200]: /favicon.ico
+[Thu Nov 14 15:18:26 2019] 127.0.0.1:56052 [200]: /favicon.ico
+[Thu Nov 14 15:20:37 2019] 127.0.0.1:56088 [200]: /favicon.ico
+[Thu Nov 14 15:20:40 2019] 127.0.0.1:56093 [200]: /favicon.ico
+[Thu Nov 14 15:20:45 2019] 127.0.0.1:56095 [200]: /css/app.css
+[Thu Nov 14 15:20:45 2019] 127.0.0.1:56098 [200]: /js/app.js
+[Thu Nov 14 15:20:45 2019] 127.0.0.1:56099 [200]: /favicon.ico
+[Thu Nov 14 15:20:57 2019] 127.0.0.1:56103 [200]: /css/app.css
+[Thu Nov 14 15:20:57 2019] 127.0.0.1:56106 [200]: /js/app.js
+[Thu Nov 14 15:20:58 2019] 127.0.0.1:56108 [200]: /favicon.ico
+[Thu Nov 14 15:21:05 2019] 127.0.0.1:56112 [200]: /css/app.css
+[Thu Nov 14 15:21:05 2019] 127.0.0.1:56114 [200]: /js/app.js
+[Thu Nov 14 15:21:05 2019] 127.0.0.1:56115 [200]: /favicon.ico
+[Thu Nov 14 15:21:08 2019] 127.0.0.1:56117 [200]: /css/app.css
+[Thu Nov 14 15:21:08 2019] 127.0.0.1:56120 [200]: /js/app.js
+[Thu Nov 14 15:21:08 2019] 127.0.0.1:56121 [200]: /favicon.ico
+[Thu Nov 14 15:21:11 2019] 127.0.0.1:56123 [200]: /css/app.css
+[Thu Nov 14 15:21:11 2019] 127.0.0.1:56130 [200]: /js/app.js
+[Thu Nov 14 15:21:11 2019] 127.0.0.1:56131 [200]: /css/blog-home.css
+[Thu Nov 14 15:21:13 2019] 127.0.0.1:56137 [200]: /favicon.ico
+[Thu Nov 14 15:22:31 2019] 127.0.0.1:56156 [200]: /css/app.css
+[Thu Nov 14 15:22:31 2019] 127.0.0.1:56162 [200]: /css/blog-home.css
+[Thu Nov 14 15:22:31 2019] 127.0.0.1:56166 [200]: /js/app.js
+[Thu Nov 14 15:22:34 2019] 127.0.0.1:56172 [200]: /favicon.ico
+[Thu Nov 14 15:22:52 2019] 127.0.0.1:56177 [200]: /css/app.css
+[Thu Nov 14 15:22:52 2019] 127.0.0.1:56182 [200]: /css/blog-home.css
+[Thu Nov 14 15:22:52 2019] 127.0.0.1:56187 [200]: /js/app.js
+[Thu Nov 14 15:22:54 2019] 127.0.0.1:56194 [200]: /favicon.ico
+[Thu Nov 14 15:26:29 2019] 127.0.0.1:56252 [200]: /css/app.css
+[Thu Nov 14 15:26:29 2019] 127.0.0.1:56255 [200]: /js/app.js
+[Thu Nov 14 15:26:29 2019] 127.0.0.1:56257 [200]: /favicon.ico
+[Thu Nov 14 15:28:39 2019] 127.0.0.1:56293 [200]: /css/app.css
+[Thu Nov 14 15:28:39 2019] 127.0.0.1:56294 [200]: /css/blog-home.css
+[Thu Nov 14 15:28:39 2019] 127.0.0.1:56299 [200]: /js/app.js
+[Thu Nov 14 15:28:42 2019] 127.0.0.1:56304 [200]: /favicon.ico
+[Thu Nov 14 15:28:50 2019] 127.0.0.1:56307 [200]: /css/app.css
+[Thu Nov 14 15:28:50 2019] 127.0.0.1:56309 [200]: /js/app.js
+[Thu Nov 14 15:28:51 2019] 127.0.0.1:56310 [200]: /favicon.ico
+[Thu Nov 14 15:29:21 2019] 127.0.0.1:56321 [200]: /css/app.css
+[Thu Nov 14 15:29:21 2019] 127.0.0.1:56322 [200]: /js/app.js
+[Thu Nov 14 15:29:21 2019] 127.0.0.1:56323 [200]: /favicon.ico
+[Thu Nov 14 15:29:49 2019] 127.0.0.1:56348 [200]: /css/app.css
+[Thu Nov 14 15:29:49 2019] 127.0.0.1:56351 [200]: /js/app.js
+[Thu Nov 14 15:29:49 2019] 127.0.0.1:56352 [200]: /favicon.ico
+[Thu Nov 14 15:29:54 2019] 127.0.0.1:56355 [200]: /css/app.css
+[Thu Nov 14 15:29:54 2019] 127.0.0.1:56357 [200]: /js/app.js
+[Thu Nov 14 15:29:54 2019] 127.0.0.1:56358 [200]: /favicon.ico
+[Thu Nov 14 15:31:00 2019] 127.0.0.1:56373 [200]: /css/app.css
+[Thu Nov 14 15:31:00 2019] 127.0.0.1:56376 [200]: /js/app.js
+[Thu Nov 14 15:31:01 2019] 127.0.0.1:56378 [200]: /favicon.ico
+[Thu Nov 14 15:31:07 2019] 127.0.0.1:56385 [200]: /css/app.css
+[Thu Nov 14 15:31:07 2019] 127.0.0.1:56388 [200]: /css/blog-home.css
+[Thu Nov 14 15:31:07 2019] 127.0.0.1:56391 [200]: /js/app.js
+[Thu Nov 14 15:31:10 2019] 127.0.0.1:56399 [200]: /css/app.css
+[Thu Nov 14 15:31:10 2019] 127.0.0.1:56400 [200]: /js/app.js
+[Thu Nov 14 15:31:10 2019] 127.0.0.1:56402 [200]: /favicon.ico
+[Thu Nov 14 15:31:23 2019] 127.0.0.1:56409 [200]: /css/app.css
+[Thu Nov 14 15:31:23 2019] 127.0.0.1:56410 [200]: /js/app.js
+[Thu Nov 14 15:31:23 2019] 127.0.0.1:56411 [200]: /favicon.ico
+[Thu Nov 14 15:31:26 2019] 127.0.0.1:56414 [200]: /css/app.css
+[Thu Nov 14 15:31:26 2019] 127.0.0.1:56416 [200]: /js/app.js
+[Thu Nov 14 15:31:26 2019] 127.0.0.1:56417 [200]: /favicon.ico
+[Thu Nov 14 15:31:31 2019] 127.0.0.1:56418 [200]: /favicon.ico
+[Thu Nov 14 15:31:45 2019] 127.0.0.1:56425 [200]: /favicon.ico
+[Thu Nov 14 15:31:51 2019] 127.0.0.1:56428 [200]: /favicon.ico
+[Thu Nov 14 15:33:10 2019] 127.0.0.1:56452 [200]: /favicon.ico
+[Thu Nov 14 15:33:14 2019] 127.0.0.1:56453 [200]: /css/app.css
+[Thu Nov 14 15:33:14 2019] 127.0.0.1:56455 [200]: /js/app.js
+[Thu Nov 14 15:33:14 2019] 127.0.0.1:56456 [200]: /favicon.ico
+[Thu Nov 14 15:33:28 2019] 127.0.0.1:56460 [200]: /favicon.ico
+[Thu Nov 14 15:39:25 2019] 127.0.0.1:56547 [200]: /favicon.ico
+[Thu Nov 14 15:41:40 2019] 127.0.0.1:56576 [200]: /favicon.ico
+[Thu Nov 14 15:41:54 2019] 127.0.0.1:56584 [200]: /favicon.ico
+[Thu Nov 14 15:42:05 2019] 127.0.0.1:56591 [200]: /favicon.ico
+[Thu Nov 14 15:42:09 2019] 127.0.0.1:56592 [200]: /css/app.css
+[Thu Nov 14 15:42:09 2019] 127.0.0.1:56594 [200]: /js/app.js
+[Thu Nov 14 15:42:09 2019] 127.0.0.1:56595 [200]: /favicon.ico
+[Thu Nov 14 15:42:12 2019] 127.0.0.1:56598 [200]: /css/app.css
+[Thu Nov 14 15:42:12 2019] 127.0.0.1:56600 [200]: /js/app.js
+[Thu Nov 14 15:42:12 2019] 127.0.0.1:56601 [200]: /favicon.ico
+[Thu Nov 14 15:42:16 2019] 127.0.0.1:56602 [200]: /favicon.ico
+[Thu Nov 14 15:42:19 2019] 127.0.0.1:56607 [200]: /favicon.ico
+[Thu Nov 14 15:42:41 2019] 127.0.0.1:56611 [200]: /favicon.ico
+[Thu Nov 14 15:42:44 2019] 127.0.0.1:56614 [200]: /favicon.ico
+[Thu Nov 14 15:43:10 2019] 127.0.0.1:56623 [200]: /css/app.css
+[Thu Nov 14 15:43:10 2019] 127.0.0.1:56626 [200]: /js/app.js
+[Thu Nov 14 15:43:11 2019] 127.0.0.1:56627 [200]: /favicon.ico
+[Thu Nov 14 15:43:15 2019] 127.0.0.1:56633 [200]: /css/app.css
+[Thu Nov 14 15:43:15 2019] 127.0.0.1:56636 [200]: /css/blog-home.css
+[Thu Nov 14 15:43:15 2019] 127.0.0.1:56637 [200]: /js/app.js
+[Thu Nov 14 15:43:16 2019] 127.0.0.1:56645 [200]: /css/app.css
+[Thu Nov 14 15:43:16 2019] 127.0.0.1:56648 [200]: /js/app.js
+[Thu Nov 14 15:43:17 2019] 127.0.0.1:56649 [200]: /favicon.ico
+[Thu Nov 14 15:43:24 2019] 127.0.0.1:56656 [200]: /css/app.css
+[Thu Nov 14 15:43:24 2019] 127.0.0.1:56657 [200]: /js/app.js
+[Thu Nov 14 15:43:25 2019] 127.0.0.1:56658 [200]: /favicon.ico
+[Thu Nov 14 15:43:27 2019] 127.0.0.1:56660 [200]: /css/app.css
+[Thu Nov 14 15:43:27 2019] 127.0.0.1:56663 [200]: /js/app.js
+[Thu Nov 14 15:43:27 2019] 127.0.0.1:56664 [200]: /favicon.ico
+[Thu Nov 14 15:43:29 2019] 127.0.0.1:56665 [200]: /favicon.ico
+[Thu Nov 14 15:43:31 2019] 127.0.0.1:56667 [200]: /css/app.css
+[Thu Nov 14 15:43:31 2019] 127.0.0.1:56669 [200]: /js/app.js
+[Thu Nov 14 15:43:31 2019] 127.0.0.1:56670 [200]: /favicon.ico
+[Thu Nov 14 15:43:34 2019] 127.0.0.1:56676 [200]: /css/app.css
+[Thu Nov 14 15:43:34 2019] 127.0.0.1:56675 [200]: /js/app.js
+[Thu Nov 14 15:43:34 2019] 127.0.0.1:56678 [200]: /favicon.ico
+[Thu Nov 14 15:44:56 2019] 127.0.0.1:56695 [200]: /css/app.css
+[Thu Nov 14 15:44:56 2019] 127.0.0.1:56698 [200]: /js/app.js
+[Thu Nov 14 15:44:56 2019] 127.0.0.1:56699 [200]: /favicon.ico
+[Thu Nov 14 15:44:57 2019] 127.0.0.1:56701 [200]: /css/app.css
+[Thu Nov 14 15:44:57 2019] 127.0.0.1:56703 [200]: /js/app.js
+[Thu Nov 14 15:44:58 2019] 127.0.0.1:56704 [200]: /favicon.ico
+[Thu Nov 14 15:46:40 2019] 127.0.0.1:56728 [200]: /css/app.css
+[Thu Nov 14 15:46:40 2019] 127.0.0.1:56731 [200]: /js/app.js
+[Thu Nov 14 15:46:40 2019] 127.0.0.1:56732 [200]: /favicon.ico
+[Thu Nov 14 15:46:45 2019] 127.0.0.1:56735 [200]: /css/app.css
+[Thu Nov 14 15:46:45 2019] 127.0.0.1:56737 [200]: /js/app.js
+[Thu Nov 14 15:46:46 2019] 127.0.0.1:56738 [200]: /favicon.ico
+[Thu Nov 14 15:46:49 2019] 127.0.0.1:56739 [200]: /css/app.css
+[Thu Nov 14 15:46:49 2019] 127.0.0.1:56744 [200]: /css/blog-home.css
+[Thu Nov 14 15:46:49 2019] 127.0.0.1:56746 [200]: /js/app.js
+[Thu Nov 14 15:46:52 2019] 127.0.0.1:56756 [200]: /favicon.ico
+[Thu Nov 14 15:48:06 2019] 127.0.0.1:56774 [200]: /css/app.css
+[Thu Nov 14 15:48:06 2019] 127.0.0.1:56777 [200]: /js/app.js
+[Thu Nov 14 15:48:06 2019] 127.0.0.1:56778 [200]: /favicon.ico
+[Thu Nov 14 15:48:27 2019] 127.0.0.1:56785 [200]: /css/app.css
+[Thu Nov 14 15:48:27 2019] 127.0.0.1:56787 [200]: /js/app.js
+[Thu Nov 14 15:48:27 2019] 127.0.0.1:56788 [200]: /favicon.ico
+[Thu Nov 14 15:48:51 2019] 127.0.0.1:56793 [200]: /css/app.css
+[Thu Nov 14 15:48:51 2019] 127.0.0.1:56797 [200]: /js/app.js
+[Thu Nov 14 15:48:51 2019] 127.0.0.1:56798 [200]: /favicon.ico
+[Thu Nov 14 15:48:54 2019] 127.0.0.1:56799 [200]: /css/app.css
+[Thu Nov 14 15:48:54 2019] 127.0.0.1:56802 [200]: /js/app.js
+[Thu Nov 14 15:48:54 2019] 127.0.0.1:56803 [200]: /favicon.ico
+[Thu Nov 14 15:49:19 2019] 127.0.0.1:56812 [200]: /css/app.css
+[Thu Nov 14 15:49:19 2019] 127.0.0.1:56815 [200]: /js/app.js
+[Thu Nov 14 15:49:19 2019] 127.0.0.1:56816 [200]: /favicon.ico
+[Thu Nov 14 15:49:24 2019] 127.0.0.1:56819 [200]: /css/app.css
+[Thu Nov 14 15:49:24 2019] 127.0.0.1:56823 [200]: /css/blog-home.css
+[Thu Nov 14 15:49:24 2019] 127.0.0.1:56828 [200]: /js/app.js
+[Thu Nov 14 15:49:29 2019] 127.0.0.1:56834 [200]: /favicon.ico
+[Thu Nov 14 15:49:34 2019] 127.0.0.1:56837 [200]: /css/app.css
+[Thu Nov 14 15:49:34 2019] 127.0.0.1:56839 [200]: /js/app.js
+[Thu Nov 14 15:49:34 2019] 127.0.0.1:56840 [200]: /favicon.ico
+[Thu Nov 14 15:49:49 2019] 127.0.0.1:56843 [200]: /css/app.css
+[Thu Nov 14 15:49:49 2019] 127.0.0.1:56848 [200]: /css/blog-home.css
+[Thu Nov 14 15:49:49 2019] 127.0.0.1:56853 [200]: /js/app.js
+[Thu Nov 14 15:49:53 2019] 127.0.0.1:56858 [200]: /favicon.ico
+[Thu Nov 14 15:50:24 2019] 127.0.0.1:56885 [200]: /css/app.css
+[Thu Nov 14 15:50:24 2019] 127.0.0.1:56887 [200]: /css/blog-home.css
+[Thu Nov 14 15:50:25 2019] 127.0.0.1:56891 [200]: /js/app.js
+[Thu Nov 14 15:50:27 2019] 127.0.0.1:56898 [200]: /favicon.ico
+[Thu Nov 14 15:54:09 2019] 127.0.0.1:56950 [200]: /css/app.css
+[Thu Nov 14 15:54:09 2019] 127.0.0.1:56952 [200]: /js/app.js
+[Thu Nov 14 15:54:09 2019] 127.0.0.1:56953 [200]: /favicon.ico
+[Thu Nov 14 15:54:19 2019] 127.0.0.1:56961 [200]: /css/app.css
+[Thu Nov 14 15:54:19 2019] 127.0.0.1:56962 [200]: /js/app.js
+[Thu Nov 14 15:54:19 2019] 127.0.0.1:56963 [200]: /favicon.ico
+[Thu Nov 14 15:54:38 2019] 127.0.0.1:56969 [200]: /css/app.css
+[Thu Nov 14 15:54:38 2019] 127.0.0.1:56972 [200]: /js/app.js
+[Thu Nov 14 15:54:38 2019] 127.0.0.1:56973 [200]: /favicon.ico
+[Thu Nov 14 15:55:08 2019] 127.0.0.1:56980 [200]: /css/app.css
+[Thu Nov 14 15:55:08 2019] 127.0.0.1:56983 [200]: /js/app.js
+[Thu Nov 14 15:55:08 2019] 127.0.0.1:56984 [200]: /favicon.ico
+[Thu Nov 14 15:55:10 2019] 127.0.0.1:56986 [200]: /css/app.css
+[Thu Nov 14 15:55:10 2019] 127.0.0.1:56989 [200]: /js/app.js
+[Thu Nov 14 15:55:10 2019] 127.0.0.1:56990 [200]: /favicon.ico
+[Thu Nov 14 15:56:06 2019] 127.0.0.1:57005 [200]: /css/app.css
+[Thu Nov 14 15:56:06 2019] 127.0.0.1:57008 [200]: /js/app.js
+[Thu Nov 14 15:56:06 2019] 127.0.0.1:57009 [200]: /favicon.ico
+[Thu Nov 14 15:56:54 2019] 127.0.0.1:57020 [200]: /css/app.css
+[Thu Nov 14 15:56:54 2019] 127.0.0.1:57023 [200]: /js/app.js
+[Thu Nov 14 15:56:54 2019] 127.0.0.1:57024 [200]: /favicon.ico
+[Thu Nov 14 15:56:57 2019] 127.0.0.1:57026 [200]: /css/app.css
+[Thu Nov 14 15:56:57 2019] 127.0.0.1:57029 [200]: /js/app.js
+[Thu Nov 14 15:56:57 2019] 127.0.0.1:57030 [200]: /favicon.ico
+[Thu Nov 14 15:57:02 2019] 127.0.0.1:57039 [200]: /css/app.css
+[Thu Nov 14 15:57:02 2019] 127.0.0.1:57040 [200]: /css/blog-home.css
+[Thu Nov 14 15:57:02 2019] 127.0.0.1:57041 [200]: /js/app.js
+[Thu Nov 14 15:57:04 2019] 127.0.0.1:57051 [200]: /css/app.css
+[Thu Nov 14 15:57:04 2019] 127.0.0.1:57052 [200]: /js/app.js
+[Thu Nov 14 15:57:05 2019] 127.0.0.1:57053 [200]: /favicon.ico
+[Thu Nov 14 15:57:21 2019] 127.0.0.1:57060 [200]: /css/app.css
+[Thu Nov 14 15:57:21 2019] 127.0.0.1:57061 [200]: /js/app.js
+[Thu Nov 14 15:57:21 2019] 127.0.0.1:57062 [200]: /favicon.ico
+[Thu Nov 14 15:57:28 2019] 127.0.0.1:57069 [200]: /css/app.css
+[Thu Nov 14 15:57:28 2019] 127.0.0.1:57070 [200]: /js/app.js
+[Thu Nov 14 15:57:28 2019] 127.0.0.1:57071 [200]: /favicon.ico
+[Thu Nov 14 15:57:34 2019] 127.0.0.1:57075 [200]: /css/app.css
+[Thu Nov 14 15:57:34 2019] 127.0.0.1:57077 [200]: /js/app.js
+[Thu Nov 14 15:57:35 2019] 127.0.0.1:57078 [200]: /favicon.ico
+[Thu Nov 14 15:57:56 2019] 127.0.0.1:57083 [200]: /css/app.css
+[Thu Nov 14 15:57:56 2019] 127.0.0.1:57085 [200]: /js/app.js
+[Thu Nov 14 15:57:56 2019] 127.0.0.1:57086 [200]: /favicon.ico
+[Thu Nov 14 15:57:58 2019] 127.0.0.1:57087 [200]: /css/app.css
+[Thu Nov 14 15:57:58 2019] 127.0.0.1:57091 [200]: /js/app.js
+[Thu Nov 14 15:57:58 2019] 127.0.0.1:57092 [200]: /favicon.ico
+[Thu Nov 14 15:59:23 2019] 127.0.0.1:57113 [200]: /css/app.css
+[Thu Nov 14 15:59:23 2019] 127.0.0.1:57116 [200]: /js/app.js
+[Thu Nov 14 15:59:23 2019] 127.0.0.1:57117 [200]: /favicon.ico
+[Thu Nov 14 16:03:41 2019] 127.0.0.1:57176 [200]: /css/app.css
+[Thu Nov 14 16:03:41 2019] 127.0.0.1:57178 [200]: /js/app.js
+[Thu Nov 14 16:03:42 2019] 127.0.0.1:57180 [200]: /favicon.ico
+[Thu Nov 14 16:03:44 2019] 127.0.0.1:57181 [200]: /css/app.css
+[Thu Nov 14 16:03:44 2019] 127.0.0.1:57184 [200]: /js/app.js
+[Thu Nov 14 16:03:44 2019] 127.0.0.1:57185 [200]: /favicon.ico
+[Thu Nov 14 16:03:46 2019] 127.0.0.1:57188 [200]: /css/app.css
+[Thu Nov 14 16:03:46 2019] 127.0.0.1:57190 [200]: /js/app.js
+[Thu Nov 14 16:03:46 2019] 127.0.0.1:57191 [200]: /favicon.ico
+[Thu Nov 14 16:03:50 2019] 127.0.0.1:57200 [200]: /css/app.css
+[Thu Nov 14 16:03:50 2019] 127.0.0.1:57201 [200]: /css/blog-home.css
+[Thu Nov 14 16:03:50 2019] 127.0.0.1:57203 [200]: /js/app.js
+[Thu Nov 14 16:03:53 2019] 127.0.0.1:57211 [200]: /favicon.ico
+[Thu Nov 14 16:03:54 2019] 127.0.0.1:57213 [200]: /css/app.css
+[Thu Nov 14 16:03:54 2019] 127.0.0.1:57214 [200]: /js/app.js
+[Thu Nov 14 16:03:54 2019] 127.0.0.1:57215 [200]: /favicon.ico
+[Thu Nov 14 16:04:02 2019] 127.0.0.1:57222 [200]: /css/app.css
+[Thu Nov 14 16:04:02 2019] 127.0.0.1:57223 [200]: /js/app.js
+[Thu Nov 14 16:04:02 2019] 127.0.0.1:57224 [200]: /favicon.ico
+[Thu Nov 14 16:04:05 2019] 127.0.0.1:57227 [200]: /css/app.css
+[Thu Nov 14 16:04:05 2019] 127.0.0.1:57229 [200]: /js/app.js
+[Thu Nov 14 16:04:05 2019] 127.0.0.1:57230 [200]: /favicon.ico
+[Thu Nov 14 16:04:16 2019] 127.0.0.1:57233 [200]: /css/app.css
+[Thu Nov 14 16:04:16 2019] 127.0.0.1:57235 [200]: /js/app.js
+[Thu Nov 14 16:04:16 2019] 127.0.0.1:57236 [200]: /favicon.ico
+[Thu Nov 14 16:04:33 2019] 127.0.0.1:57246 [200]: /css/blog-post.css
+[Thu Nov 14 16:04:33 2019] 127.0.0.1:57248 [200]: /css/app.css
+[Thu Nov 14 16:04:33 2019] 127.0.0.1:57247 [200]: /images/63ER6laQLQFlp9EmmnznIrVrmu2SARgAdDstIxLX.jpeg
+[Thu Nov 14 16:04:33 2019] 127.0.0.1:57249 [200]: /js/app.js
+[Thu Nov 14 16:04:34 2019] 127.0.0.1:57250 [200]: /favicon.ico
+[Thu Nov 14 16:04:38 2019] 127.0.0.1:57252 [200]: /css/app.css
+[Thu Nov 14 16:04:38 2019] 127.0.0.1:57255 [200]: /js/app.js
+[Thu Nov 14 16:04:38 2019] 127.0.0.1:57256 [200]: /favicon.ico
+[Thu Nov 14 16:04:40 2019] 127.0.0.1:57258 [200]: /css/app.css
+[Thu Nov 14 16:04:40 2019] 127.0.0.1:57260 [200]: /js/app.js
+[Thu Nov 14 16:04:40 2019] 127.0.0.1:57261 [200]: /favicon.ico
+[Thu Nov 14 16:06:29 2019] 127.0.0.1:57286 [200]: /favicon.ico
+[Thu Nov 14 16:07:18 2019] 127.0.0.1:57301 [200]: /favicon.ico
+[Thu Nov 14 16:07:21 2019] 127.0.0.1:57306 [200]: /favicon.ico
+[Thu Nov 14 16:07:26 2019] 127.0.0.1:57309 [200]: /favicon.ico
+[Thu Nov 14 16:12:03 2019] 127.0.0.1:57379 [200]: /favicon.ico
+[Thu Nov 14 16:12:06 2019] 127.0.0.1:57383 [200]: /css/app.css
+[Thu Nov 14 16:12:06 2019] 127.0.0.1:57386 [200]: /css/blog-home.css
+[Thu Nov 14 16:12:06 2019] 127.0.0.1:57390 [200]: /js/app.js
+[Thu Nov 14 16:12:10 2019] 127.0.0.1:57398 [200]: /favicon.ico
+[Thu Nov 14 16:13:49 2019] 127.0.0.1:57419 [200]: /css/app.css
+[Thu Nov 14 16:13:49 2019] 127.0.0.1:57421 [200]: /js/app.js
+[Thu Nov 14 16:13:49 2019] 127.0.0.1:57422 [200]: /favicon.ico
+[Thu Nov 14 16:13:56 2019] 127.0.0.1:57430 [200]: /css/app.css
+[Thu Nov 14 16:13:56 2019] 127.0.0.1:57431 [200]: /js/app.js
+[Thu Nov 14 16:13:57 2019] 127.0.0.1:57432 [200]: /favicon.ico
+[Thu Nov 14 16:14:36 2019] 127.0.0.1:57452 [200]: /css/app.css
+[Thu Nov 14 16:14:36 2019] 127.0.0.1:57455 [200]: /js/app.js
+[Thu Nov 14 16:14:36 2019] 127.0.0.1:57456 [200]: /favicon.ico

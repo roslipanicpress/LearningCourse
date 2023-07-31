@@ -1,0 +1,6 @@
+file -> preference -> setting
+search php
+php intellisense
+edit in setting json
+
+class kena huruf besar

@@ -1,0 +1,437 @@
+User.php--boleh hidden field x boleh bagi terminal nampak.
+UserFactory.php--boleh random generate user sebanyak mana pon
+
+
+php artisan serve kat terminal
+create database kat env
+time zone line 70 Asia/Kuala_Lumpur
+.env files tukar nama database
+config/app.php tukar timezone UTC ke Asia/Kuala_Lumpur'
+php artisan migrate
+PS C:\xampp\htdocs\blog> composer require laravel/ui --dev
+PS C:\xampp\htdocs\blog> mysql -u root -p
+mysql> CREATE DATABASE `blog-app`;
+mysql> show tables;
++--------------------+
+| Tables_in_blog-app |
++--------------------+
+| failed_jobs        |
+| migrations         |
+| password_resets    |
+| users              |
++--------------------+
+4 rows in set (0.00 sec)
+PS C:\xampp\htdocs\blog> php artisan migrate
+Migration table created successfully.
+PS C:\xampp\htdocs\blog> php artisan ui vue --auth
+PS C:\xampp\htdocs\blog> npm install
+PS C:\xampp\htdocs\blog> npm run dev
+S C:\xampp\htdocs\blog> php artisan
+Laravel Framework 6.5.0---------list all artisan features
+
+----------------------INFO Laravel--------
+-application key untuk encrypt password
+-folder app (utama)
+-model ada dalam app
+-model naming singular untuk database plural name(eg User(M) so the (DB) name users),
+-view ada dalam resources/view
+-controller akan berhubung dengan view guna routes
+
+--------------nak cari data pakai model laravel  (Eloquent ORM laravel)----
+PS C:\xampp\htdocs\blog> php artisan tinker
+Psy Shell v0.9.9 (PHP 7.3.9 — cli) by Justin Hileman
+
+```````
+>>> App\User::find(1);     
+OR   
+>>> App\User::all(); 
+OR 
+>>> App\User::where('email','naruto@shippuden.com')->get();
+OR
+>>> DB::table('users')->find(1)
+
+````````
+
+=> App\User {#3034
+     id: 1,
+     name: "MOHD ROSLI BIN CHE WAN PURA",
+     email: "demoagro123@gmail.com",
+     email_verified_at: null,
+     created_at: "2019-11-07 10:38:21",
+     updated_at: "2019-11-07 10:38:21",
+   }
+>>>
+-------------------------Query builder------------
+dua perbandingan antara
+Eloquent ORM      &  Query Builder
+App\User::find(1) == DB::table('users')->find(1)
+
+
+-----------------creating Controller-------------find at app/http/controller
+PS C:\xampp\htdocs\blog> php artisan make:controller GreetingController
+Controller created successfully.
+
+------------CARA INSTALL LARAVEL-------
+Windows PowerShell
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\User> php -v
+PHP 7.3.10 (cli) (built: Sep 24 2019 11:59:25) ( ZTS MSVC15 (Visual C++ 2017) x86 )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.3.10, Copyright (c) 1998-2018 Zend Technologies
+
+PS C:\Users\User> composer --version
+Composer version 1.9.0 2019-08-02 20:55:32
+PS C:\Users\User> node --version
+v12.13.0
+PS C:\Users\User> mysqladmin -u root -p ping
+Enter password: ****
+mysqld is alive
+PS C:\Users\User> composer global require laravel/installer
+Changed current directory to C:/Users/User/AppData/Roaming/Composer
+Using version ^2.2 for laravel/installer
+./composer.json has been created
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 14 installs, 0 updates, 0 removals
+  - Installing symfony/process (v4.3.6): Downloading (100%)
+  - Installing symfony/polyfill-ctype (v1.12.0): Downloading (100%)
+  - Installing symfony/filesystem (v4.3.6): Downloading (100%)
+  - Installing psr/container (1.0.0): Downloading (100%)
+  - Installing symfony/service-contracts (v1.1.7): Downloading (100%)
+  - Installing symfony/polyfill-php73 (v1.12.0): Downloading (100%)
+  - Installing symfony/polyfill-mbstring (v1.12.0): Loading from cache
+  - Installing symfony/console (v4.3.6): Downloading (100%)
+  - Installing ralouphie/getallheaders (3.0.3): Downloading (100%)
+  - Installing psr/http-message (1.0.1): Downloading (100%)
+  - Installing guzzlehttp/psr7 (1.6.1): Downloading (100%)
+  - Installing guzzlehttp/promises (v1.3.1): Downloading (100%)
+  - Installing guzzlehttp/guzzle (6.4.1): Downloading (100%)
+  - Installing laravel/installer (v2.2.1): Downloading (100%)
+symfony/service-contracts suggests installing symfony/service-implementation
+symfony/console suggests installing symfony/event-dispatcher
+symfony/console suggests installing symfony/lock
+symfony/console suggests installing psr/log (For using the console logger)
+guzzlehttp/psr7 suggests installing zendframework/zend-httphandlerrunner (Emit PSR-7 responses)
+guzzlehttp/guzzle suggests installing psr/log (Required for using the Log middleware)
+Writing lock file
+Generating autoload files
+PS C:\Users\User> laravel --version
+Laravel Installer 2.2.0
+PS C:\Users\User> composer global update
+Changed current directory to C:/Users/User/AppData/Roaming/Composer
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Nothing to install or update
+Generating autoload files
+PS C:\Users\User> composer --version
+Composer version 1.9.0 2019-08-02 20:55:32
+PS C:\Users\User>
+------------------------------------INSTALL PACKAGE BLOG------------------
+PS C:\Users\User> CD..
+PS C:\Users> cd..
+PS C:\> cd UwAmpp\www\kursusphp
+PS C:\UwAmpp\www\kursusphp> cd..
+PS C:\UwAmpp\www> laravel new blog
+Crafting application...
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Installation request for league/flysystem 1.0.57 -> satisfiable by league/flysystem[1.0.57].
+    - league/flysystem 1.0.57 requires ext-fileinfo * -> the requested PHP extension fileinfo is missing from your system.
+  Problem 2
+    - league/flysystem 1.0.57 requires ext-fileinfo * -> the requested PHP extension fileinfo is missing from your system.
+    - laravel/framework v6.5.0 requires league/flysystem ^1.0.8 -> satisfiable by league/flysystem[1.0.57].
+    - Installation request for laravel/framework v6.5.0 -> satisfiable by laravel/framework[v6.5.0].
+
+  To enable extensions, verify that they are enabled in your .ini files:
+    - C:\UwAmpp\bin\php\php-7.3.1\php.ini
+
+
+
+------------------install BLOG---------------
+C:\xampp\htdocs>laravel new blog
+Crafting application...
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Package operations: 84 installs, 0 updates, 0 removals
+  - Installing doctrine/inflector (v1.3.0): Downloading (100%)
+  - Installing doctrine/lexer (1.1.0): Downloading (100%)
+ 
+------------------laravel config--------
+Windows PowerShell
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+
+PS C:\xampp\htdocs\blog> php artisan migrate
+
+   Illuminate\Database\QueryException  : SQLSTATE[HY000] [1049] Unknown database 'blog-app' (SQL: select * from information_schema.tables where table_schema = blog-app and table_name = migrations and table_type = 'BASE TABLE')
+
+  at C:\xampp\htdocs\blog\vendor\laravel\framework\src\Illuminate\Database\Connection.php:665
+    661|         // If an exception occurs when attempting to run a query, we'll format the error
+    662|         // message to include the bindings with SQL, which will make this exception a
+    663|         // lot more helpful to the developer instead of just the database's errors.
+    664|         catch (Exception $e) {
+  > 665|             throw new QueryException(
+    666|                 $query, $this->prepareBindings($bindings), $e
+    667|             );
+    668|         }
+    669|
+
+  Exception trace:
+
+  1   PDOException::("SQLSTATE[HY000] [1049] Unknown database 'blog-app'")
+      C:\xampp\htdocs\blog\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:70
+
+  2   PDO::__construct("mysql:host=127.0.0.1;port=3306;dbname=blog-app", "root", "", [])
+      C:\xampp\htdocs\blog\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:70
+
+  Please use the argument -v to see more details.
+PS C:\xampp\htdocs\blog> mysql -u root -p
+Enter password: ****
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+PS C:\xampp\htdocs\blog> mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 24
+Server version: 5.5.5-10.4.6-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE `blog-app`;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> quit
+Bye
+PS C:\xampp\htdocs\blog> php artisan migrate
+Migration table created successfully.
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.08 seconds)
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table (0.08 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.05 seconds)
+PS C:\xampp\htdocs\blog> mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 26
+Server version: 5.5.5-10.4.6-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use blog-app
+Database changed
+mysql> show tables
+    -> show tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show tables' at line 2
+mysql> show tables;
++--------------------+
+| Tables_in_blog-app |
++--------------------+
+| failed_jobs        |
+| migrations         |
+| password_resets    |
+| users              |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> 
+
+----------------
+
+-------------------------
+PS C:\xampp\htdocs\blog> composer require laravel/ui --dev
+Using version ^1.1 for laravel/ui
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+
+
+----------------------
+Routing
+Laravel's laravel/ui package provides a quick way to scaffold all of the routes and views you need for authentication using a few simple commands:
+
+composer require laravel/ui --dev
+
+php artisan ui vue --auth
+  You can also run `php --ini` inside terminal to see which files are used by PHP in CLI mode.
+Application ready! Build something amazing.
+PS C:\UwAmpp\www\blog>
+
+-------------------PS C:\xampp\htdocs\blog> php artisan ui vue --auth
+Vue scaffolding installed successfully.
+Please run "npm install && npm run dev" to compile your fresh scaffolding.
+Authentication scaffolding generated successfully.
+PS C:\xampp\htdocs\blog>
+---------------------------------LARAVEL LOGIN INSTALL--------
+Windows PowerShell
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+
+PS C:\xampp\htdocs\blog> composer require laravel/ui --dev
+Using version ^1.1 for laravel/ui
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing laravel/ui (v1.1.1): Downloading (100%)
+Writing lock file
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: ?[32mfacade/ignition?[39m
+Discovered Package: ?[32mfideloper/proxy?[39m
+Discovered Package: ?[32mlaravel/tinker?[39m
+Discovered Package: ?[32mlaravel/ui?[39m
+Discovered Package: ?[32mnesbot/carbon?[39m
+Discovered Package: ?[32mnunomaduro/collision?[39m
+?[32mPackage manifest generated successfully.?[39m
+PS C:\xampp\htdocs\blog> php artisan ui vue --auth
+Vue scaffolding installed successfully.
+Please run "npm install && npm run dev" to compile your fresh scaffolding.
+Authentication scaffolding generated successfully.
+PS C:\xampp\htdocs\blog> npn run dev
+npn : The term 'npn' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ npn run dev
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (npn:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\xampp\htdocs\blog> npn run dev
+npn : The term 'npn' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ npn run dev
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (npn:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\xampp\htdocs\blog> npm run dev
+
+> @ dev C:\xampp\htdocs\blog
+> npm run development
+
+
+> @ development C:\xampp\htdocs\blog
+> cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js
+
+'cross-env' is not recognized as an internal or external command,
+operable program or batch file.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ development: `cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @ development script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\User\AppData\Roaming\npm-cache\_logs\2019-11-07T02_30_58_326Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ dev: `npm run development`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @ dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\User\AppData\Roaming\npm-cache\_logs\2019-11-07T02_30_58_400Z-debug.log
+PS C:\xampp\htdocs\blog> npm install
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+added 1011 packages from 487 contributors and audited 17168 packages in 70.146s
+found 0 vulnerabilities
+
+PS C:\xampp\htdocs\blog> npm run dev
+
+> @ dev C:\xampp\htdocs\blog
+> npm run development
+
+
+> @ development C:\xampp\htdocs\blog
+> cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js
+
+98% after emitting SizeLimitsPlugin
+
+ DONE  Compiled successfully in 18982ms                                                                                         10:33:35 AM
+
+       Asset      Size   Chunks             Chunk Names
+/css/app.css   191 KiB  /js/app  [emitted]  /js/app
+  /js/app.js  1.38 MiB  /js/app  [emitted]  /js/app
+PS C:\xampp\htdocs\blog> php artisan serve
+Laravel development server started: http://127.0.0.1:8000
+PS C:\xampp\htdocs\blog>
+
+
+----------------------
+PS C:\xampp\htdocs\blog> php artisan make:controller GreetingController
+Controller created successfully.
+PS C:\xampp\htdocs\blog> php artisan make:controller ProfilController
+Controller created successfully.
+PS C:\xampp\htdocs\blog> php artisan route:list
++--------+----------+------------------------+------------------+------------------------------------------------------------------------+--------------+
+| Domain | Method   | URI                    | Name             | Action                                                                 |
+Middleware   |
++--------+----------+------------------------+------------------+------------------------------------------------------------------------+--------------+
+|        | GET|HEAD | /                      |                  | Closure                                                                |
+web          |
+|        | GET|HEAD | api/user               |                  | Closure                                                                |
+api,auth:api |
+|        | GET|HEAD | greeting               |                  | App\Http\Controllers\GreetingController@index                          |
+web          |
+|        | GET|HEAD | home                   | home             | App\Http\Controllers\HomeController@index                              |
+web,auth     |
+|        | GET|HEAD | login                  | login            | App\Http\Controllers\Auth\LoginController@showLoginForm                |
+web,guest    |
+|        | POST     | login                  |                  | App\Http\Controllers\Auth\LoginController@login                        |
+web,guest    |
+|        | POST     | logout                 | logout           | App\Http\Controllers\Auth\LoginController@logout                       |
+web          |
+|        | GET|HEAD | password/confirm       | password.confirm | App\Http\Controllers\Auth\ConfirmPasswordController@showConfirmForm    |
+web,auth     |
+|        | POST     | password/confirm       |                  | App\Http\Controllers\Auth\ConfirmPasswordController@confirm            |
+web,auth     |
+|        | POST     | password/email         | password.email   | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  |
+web          |
+|        | GET|HEAD | password/reset         | password.request | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm |
+web          |
+|        | POST     | password/reset         | password.update  | App\Http\Controllers\Auth\ResetPasswordController@reset                |
+web          |
+|        | GET|HEAD | password/reset/{token} | password.reset   | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        |
+web          |
+|        | GET|HEAD | profil/{id}            |                  | App\Http\Controllers\ProfilController@index                            |
+web          |
+|        | GET|HEAD | profil/{user}          |                  | App\Http\Controllers\ProfilController@show                             |
+web          |
+|        | POST     | register               |                  | App\Http\Controllers\Auth\RegisterController@register                  |
+web,guest    |
+|        | GET|HEAD | register               | register         | App\Http\Controllers\Auth\RegisterController@showRegistrationForm      |
+web,guest    |
++--------+----------+------------------------+------------------+------------------------------------------------------------------------+--------------+
+PS C:\xampp\htdocs\blog>
+
+
+
+
+
+
+
+

@@ -1,0 +1,295 @@
+Windows PowerShell
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+
+PS C:\xampp\htdocs\blog> php artisan serve
+Laravel development server started: http://127.0.0.1:8000
+[Wed Nov 13 09:15:37 2019] 127.0.0.1:65237 [200]: /css/blog-home.css
+[Wed Nov 13 09:15:37 2019] 127.0.0.1:65255 [200]: /css/app.css
+[Wed Nov 13 09:15:38 2019] 127.0.0.1:65260 [200]: /js/app.js
+[Wed Nov 13 09:15:56 2019] 127.0.0.1:65380 [200]: /favicon.ico
+[Wed Nov 13 09:17:40 2019] 127.0.0.1:65415 [200]: /js/app.js
+[Wed Nov 13 09:17:40 2019] 127.0.0.1:65417 [200]: /css/app.css
+[Wed Nov 13 09:17:41 2019] 127.0.0.1:65419 [200]: /favicon.ico
+[Wed Nov 13 09:17:53 2019] 127.0.0.1:65425 [200]: /js/app.js
+[Wed Nov 13 09:17:53 2019] 127.0.0.1:65426 [200]: /css/app.css
+[Wed Nov 13 09:17:53 2019] 127.0.0.1:65427 [200]: /favicon.ico
+[Wed Nov 13 09:18:01 2019] 127.0.0.1:65431 [200]: /css/app.css
+[Wed Nov 13 09:18:01 2019] 127.0.0.1:65435 [200]: /css/blog-home.css
+[Wed Nov 13 09:18:01 2019] 127.0.0.1:65440 [200]: /js/app.js
+[Wed Nov 13 09:18:21 2019] 127.0.0.1:49160 [200]: /favicon.ico
+[Wed Nov 13 09:20:44 2019] 127.0.0.1:49197 [200]: /favicon.ico
+[Wed Nov 13 09:21:47 2019] 127.0.0.1:49217 [200]: /favicon.ico
+[Wed Nov 13 09:26:04 2019] 127.0.0.1:49297 [200]: /css/app.css
+[Wed Nov 13 09:26:04 2019] 127.0.0.1:49302 [200]: /css/blog-home.css
+[Wed Nov 13 09:26:04 2019] 127.0.0.1:49309 [200]: /js/app.js
+[Wed Nov 13 09:26:23 2019] 127.0.0.1:49416 [200]: /favicon.ico
+[Wed Nov 13 09:26:56 2019] 127.0.0.1:49424 [200]: /js/app.js
+[Wed Nov 13 09:26:56 2019] 127.0.0.1:49427 [200]: /css/app.css
+[Wed Nov 13 09:26:56 2019] 127.0.0.1:49428 [200]: /favicon.ico
+[Wed Nov 13 09:30:29 2019] 127.0.0.1:49496 [200]: /css/blog-post.css
+[Wed Nov 13 09:30:29 2019] 127.0.0.1:49497 [200]: /css/app.css
+[Wed Nov 13 09:30:29 2019] 127.0.0.1:49498 [200]: /js/app.js
+[Wed Nov 13 09:30:30 2019] 127.0.0.1:49499 [200]: /favicon.ico
+[Wed Nov 13 09:30:39 2019] 127.0.0.1:49502 [200]: /js/app.js
+[Wed Nov 13 09:30:39 2019] 127.0.0.1:49504 [200]: /css/app.css
+[Wed Nov 13 09:30:40 2019] 127.0.0.1:49506 [200]: /favicon.ico
+[Wed Nov 13 09:30:49 2019] 127.0.0.1:49512 [200]: /css/blog-post.css
+[Wed Nov 13 09:30:49 2019] 127.0.0.1:49513 [200]: /css/app.css
+[Wed Nov 13 09:30:49 2019] 127.0.0.1:49514 [200]: /js/app.js
+[Wed Nov 13 09:30:49 2019] 127.0.0.1:49515 [200]: /favicon.ico
+[Wed Nov 13 09:31:31 2019] 127.0.0.1:49526 [200]: /js/app.js
+[Wed Nov 13 09:31:31 2019] 127.0.0.1:49529 [200]: /css/app.css
+[Wed Nov 13 09:31:31 2019] 127.0.0.1:49530 [200]: /favicon.ico
+[Wed Nov 13 09:31:46 2019] 127.0.0.1:49538 [200]: /css/blog-post.css
+[Wed Nov 13 09:31:46 2019] 127.0.0.1:49539 [200]: /js/app.js
+[Wed Nov 13 09:31:46 2019] 127.0.0.1:49537 [200]: /css/app.css
+[Wed Nov 13 09:31:46 2019] 127.0.0.1:49540 [200]: /favicon.ico
+[Wed Nov 13 09:34:23 2019] 127.0.0.1:49581 [200]: /css/blog-post.css
+[Wed Nov 13 09:34:23 2019] 127.0.0.1:49585 [200]: /css/app.css
+[Wed Nov 13 09:34:23 2019] 127.0.0.1:49586 [200]: /js/app.js
+[Wed Nov 13 09:34:24 2019] 127.0.0.1:49587 [200]: /favicon.ico
+[Wed Nov 13 09:34:28 2019] 127.0.0.1:49590 [200]: /css/app.css
+[Wed Nov 13 09:34:28 2019] 127.0.0.1:49598 [200]: /css/blog-home.css
+[Wed Nov 13 09:34:28 2019] 127.0.0.1:49599 [200]: /js/app.js
+[Wed Nov 13 09:34:48 2019] 127.0.0.1:49701 [200]: /favicon.ico
+[Wed Nov 13 09:35:24 2019] 127.0.0.1:49711 [200]: /css/blog-post.css
+[Wed Nov 13 09:35:24 2019] 127.0.0.1:49714 [200]: /css/app.css
+[Wed Nov 13 09:35:24 2019] 127.0.0.1:49715 [200]: /js/app.js
+[Wed Nov 13 09:35:25 2019] 127.0.0.1:49716 [200]: /favicon.ico
+[Wed Nov 13 09:35:30 2019] 127.0.0.1:49718 [200]: /css/app.css
+[Wed Nov 13 09:35:30 2019] 127.0.0.1:49723 [200]: /css/blog-home.css
+[Wed Nov 13 09:35:30 2019] 127.0.0.1:49728 [200]: /js/app.js
+[Wed Nov 13 09:35:50 2019] 127.0.0.1:49833 [200]: /css/blog-post.css
+[Wed Nov 13 09:35:50 2019] 127.0.0.1:49840 [200]: /css/app.css
+[Wed Nov 13 09:35:50 2019] 127.0.0.1:49841 [200]: /js/app.js
+[Wed Nov 13 09:35:51 2019] 127.0.0.1:49842 [200]: /favicon.ico
+[Wed Nov 13 09:35:56 2019] 127.0.0.1:49844 [200]: /css/app.css
+[Wed Nov 13 09:35:56 2019] 127.0.0.1:49847 [200]: /css/blog-home.css
+[Wed Nov 13 09:35:56 2019] 127.0.0.1:49851 [200]: /js/app.js
+[Wed Nov 13 09:36:16 2019] 127.0.0.1:49953 [200]: /favicon.ico
+[Wed Nov 13 09:37:12 2019] 127.0.0.1:49964 [200]: /css/app.css
+[Wed Nov 13 09:37:12 2019] 127.0.0.1:49969 [200]: /css/blog-home.css
+[Wed Nov 13 09:37:12 2019] 127.0.0.1:49974 [200]: /js/app.js
+[Wed Nov 13 09:37:17 2019] 127.0.0.1:50005 [200]: /css/blog-post.css
+[Wed Nov 13 09:37:17 2019] 127.0.0.1:50017 [200]: /css/app.css
+[Wed Nov 13 09:37:17 2019] 127.0.0.1:50018 [200]: /js/app.js
+[Wed Nov 13 09:37:18 2019] 127.0.0.1:50019 [200]: /favicon.ico
+[Wed Nov 13 09:47:58 2019] 127.0.0.1:50181 [200]: /favicon.ico
+[Wed Nov 13 09:48:23 2019] 127.0.0.1:50189 [200]: /favicon.ico
+[Wed Nov 13 09:49:11 2019] 127.0.0.1:50223 [200]: /favicon.ico
+[Wed Nov 13 09:49:25 2019] 127.0.0.1:50229 [200]: /favicon.ico
+[Wed Nov 13 09:50:06 2019] 127.0.0.1:50242 [200]: /css/app.css
+[Wed Nov 13 09:50:06 2019] 127.0.0.1:50247 [200]: /css/blog-home.css
+[Wed Nov 13 09:50:06 2019] 127.0.0.1:50252 [200]: /js/app.js
+[Wed Nov 13 09:50:27 2019] 127.0.0.1:50355 [200]: /favicon.ico
+[Wed Nov 13 09:56:04 2019] 127.0.0.1:50448 [200]: /css/app.css
+[Wed Nov 13 09:56:04 2019] 127.0.0.1:50453 [200]: /css/blog-home.css
+[Wed Nov 13 09:56:04 2019] 127.0.0.1:50458 [200]: /js/app.js
+[Wed Nov 13 09:56:24 2019] 127.0.0.1:50561 [200]: /favicon.ico
+[Wed Nov 13 10:03:58 2019] 127.0.0.1:50673 [200]: /css/app.css
+[Wed Nov 13 10:03:58 2019] 127.0.0.1:50677 [200]: /css/blog-home.css
+[Wed Nov 13 10:03:58 2019] 127.0.0.1:50683 [200]: /js/app.js
+[Wed Nov 13 10:04:18 2019] 127.0.0.1:50786 [200]: /favicon.ico
+[Wed Nov 13 10:04:32 2019] 127.0.0.1:50793 [200]: /css/app.css
+[Wed Nov 13 10:04:32 2019] 127.0.0.1:50799 [200]: /css/blog-home.css
+[Wed Nov 13 10:04:32 2019] 127.0.0.1:50804 [200]: /js/app.js
+[Wed Nov 13 10:04:51 2019] 127.0.0.1:50902 [200]: /favicon.ico
+[Wed Nov 13 10:05:22 2019] 127.0.0.1:50914 [200]: /css/app.css
+[Wed Nov 13 10:05:22 2019] 127.0.0.1:50915 [200]: /js/app.js
+[Wed Nov 13 10:05:22 2019] 127.0.0.1:50916 [200]: /favicon.ico
+[Wed Nov 13 10:05:26 2019] 127.0.0.1:50920 [200]: /css/app.css
+[Wed Nov 13 10:05:26 2019] 127.0.0.1:50922 [200]: /css/blog-home.css
+[Wed Nov 13 10:05:26 2019] 127.0.0.1:50929 [200]: /js/app.js
+[Wed Nov 13 10:05:47 2019] 127.0.0.1:51029 [200]: /favicon.ico
+[Wed Nov 13 10:05:55 2019] 127.0.0.1:51032 [200]: /css/app.css
+[Wed Nov 13 10:05:55 2019] 127.0.0.1:51036 [200]: /css/blog-home.css
+[Wed Nov 13 10:05:55 2019] 127.0.0.1:51041 [200]: /js/app.js
+[Wed Nov 13 10:06:16 2019] 127.0.0.1:51143 [200]: /favicon.ico
+[Wed Nov 13 10:33:51 2019] 127.0.0.1:51509 [200]: /css/app.css
+[Wed Nov 13 10:33:51 2019] 127.0.0.1:51512 [200]: /css/blog-home.css
+[Wed Nov 13 10:33:51 2019] 127.0.0.1:51519 [200]: /js/app.js
+[Wed Nov 13 10:34:13 2019] 127.0.0.1:51623 [200]: /favicon.ico
+[Wed Nov 13 10:34:17 2019] 127.0.0.1:51626 [200]: /js/app.js
+[Wed Nov 13 10:34:17 2019] 127.0.0.1:51629 [200]: /css/app.css
+[Wed Nov 13 10:34:17 2019] 127.0.0.1:51630 [200]: /favicon.ico
+[Wed Nov 13 10:34:21 2019] 127.0.0.1:51632 [200]: /js/app.js
+[Wed Nov 13 10:34:21 2019] 127.0.0.1:51634 [200]: /css/app.css
+[Wed Nov 13 10:34:21 2019] 127.0.0.1:51635 [200]: /favicon.ico
+[Wed Nov 13 10:34:24 2019] 127.0.0.1:51637 [200]: /js/app.js
+[Wed Nov 13 10:34:24 2019] 127.0.0.1:51640 [200]: /css/app.css
+[Wed Nov 13 10:34:24 2019] 127.0.0.1:51642 [200]: /favicon.ico
+[Wed Nov 13 10:34:53 2019] 127.0.0.1:51647 [200]: /js/app.js
+[Wed Nov 13 10:34:53 2019] 127.0.0.1:51650 [200]: /css/app.css
+[Wed Nov 13 10:34:53 2019] 127.0.0.1:51651 [200]: /favicon.ico
+[Wed Nov 13 10:34:56 2019] 127.0.0.1:51653 [200]: /css/app.css
+[Wed Nov 13 10:34:56 2019] 127.0.0.1:51657 [200]: /css/blog-home.css
+[Wed Nov 13 10:34:56 2019] 127.0.0.1:51662 [200]: /js/app.js
+[Wed Nov 13 10:34:58 2019] 127.0.0.1:51670 [200]: /css/blog-post.css
+[Wed Nov 13 10:34:58 2019] 127.0.0.1:51678 [200]: /css/app.css
+[Wed Nov 13 10:34:58 2019] 127.0.0.1:51679 [200]: /js/app.js
+[Wed Nov 13 10:34:58 2019] 127.0.0.1:51680 [200]: /favicon.ico
+[Wed Nov 13 10:35:05 2019] 127.0.0.1:51685 [200]: /css/blog-post.css
+[Wed Nov 13 10:35:05 2019] 127.0.0.1:51688 [200]: /css/app.css
+[Wed Nov 13 10:35:05 2019] 127.0.0.1:51689 [200]: /js/app.js
+[Wed Nov 13 10:35:05 2019] 127.0.0.1:51690 [200]: /favicon.ico
+[Wed Nov 13 10:37:39 2019] 127.0.0.1:51729 [200]: /css/blog-post.css
+[Wed Nov 13 10:37:39 2019] 127.0.0.1:51733 [200]: /js/app.js
+[Wed Nov 13 10:37:39 2019] 127.0.0.1:51732 [200]: /css/app.css
+[Wed Nov 13 10:37:39 2019] 127.0.0.1:51734 [200]: /favicon.ico
+[Wed Nov 13 10:37:44 2019] 127.0.0.1:51737 [200]: /js/app.js
+[Wed Nov 13 10:37:44 2019] 127.0.0.1:51739 [200]: /css/app.css
+[Wed Nov 13 10:37:44 2019] 127.0.0.1:51740 [200]: /favicon.ico
+[Wed Nov 13 10:40:35 2019] 127.0.0.1:51784 [200]: /js/app.js
+[Wed Nov 13 10:40:35 2019] 127.0.0.1:51787 [200]: /css/app.css
+[Wed Nov 13 10:40:35 2019] 127.0.0.1:51788 [200]: /favicon.ico
+[Wed Nov 13 10:44:49 2019] 127.0.0.1:51849 [200]: /js/app.js
+[Wed Nov 13 10:44:49 2019] 127.0.0.1:51852 [200]: /css/app.css
+[Wed Nov 13 10:44:49 2019] 127.0.0.1:51853 [200]: /favicon.ico
+[Wed Nov 13 10:47:50 2019] 127.0.0.1:51945 [200]: /js/app.js
+[Wed Nov 13 10:47:50 2019] 127.0.0.1:51948 [200]: /css/app.css
+[Wed Nov 13 10:47:50 2019] 127.0.0.1:51949 [200]: /favicon.ico
+[Wed Nov 13 10:49:48 2019] 127.0.0.1:51988 [200]: /js/app.js
+[Wed Nov 13 10:49:48 2019] 127.0.0.1:51991 [200]: /css/app.css
+[Wed Nov 13 10:49:49 2019] 127.0.0.1:51992 [200]: /favicon.ico
+[Wed Nov 13 10:58:13 2019] 127.0.0.1:52122 [200]: /js/app.js
+[Wed Nov 13 10:58:13 2019] 127.0.0.1:52125 [200]: /css/app.css
+[Wed Nov 13 10:58:14 2019] 127.0.0.1:52126 [200]: /favicon.ico
+[Wed Nov 13 10:58:16 2019] 127.0.0.1:52128 [200]: /js/app.js
+[Wed Nov 13 10:58:16 2019] 127.0.0.1:52131 [200]: /css/app.css
+[Wed Nov 13 10:58:16 2019] 127.0.0.1:52132 [200]: /favicon.ico
+[Wed Nov 13 10:58:31 2019] 127.0.0.1:52137 [200]: /css/app.css
+[Wed Nov 13 10:58:31 2019] 127.0.0.1:52141 [200]: /css/blog-home.css
+[Wed Nov 13 10:58:31 2019] 127.0.0.1:52146 [200]: /js/app.js
+[Wed Nov 13 10:58:49 2019] 127.0.0.1:52247 [200]: /css/blog-post.css
+[Wed Nov 13 10:58:49 2019] 127.0.0.1:52248 [200]: /css/app.css
+[Wed Nov 13 10:58:49 2019] 127.0.0.1:52249 [200]: /js/app.js
+[Wed Nov 13 10:58:50 2019] 127.0.0.1:52250 [200]: /favicon.ico
+[Wed Nov 13 10:59:36 2019] 127.0.0.1:52266 [200]: /js/app.js
+[Wed Nov 13 10:59:36 2019] 127.0.0.1:52267 [200]: /css/app.css
+[Wed Nov 13 10:59:37 2019] 127.0.0.1:52268 [200]: /favicon.ico
+[Wed Nov 13 11:00:33 2019] 127.0.0.1:52287 [200]: /css/blog-post.css
+[Wed Nov 13 11:00:33 2019] 127.0.0.1:52288 [200]: /css/app.css
+[Wed Nov 13 11:00:33 2019] 127.0.0.1:52289 [200]: /js/app.js
+[Wed Nov 13 11:00:33 2019] 127.0.0.1:52290 [200]: /favicon.ico
+[Wed Nov 13 11:00:44 2019] 127.0.0.1:52292 [200]: /css/app.css
+[Wed Nov 13 11:00:44 2019] 127.0.0.1:52298 [200]: /css/blog-home.css
+[Wed Nov 13 11:00:44 2019] 127.0.0.1:52303 [200]: /js/app.js
+[Wed Nov 13 11:01:04 2019] 127.0.0.1:52402 [200]: /favicon.ico
+[Wed Nov 13 11:02:17 2019] 127.0.0.1:52420 [200]: /css/app.css
+[Wed Nov 13 11:02:17 2019] 127.0.0.1:52424 [200]: /css/blog-home.css
+[Wed Nov 13 11:02:17 2019] 127.0.0.1:52430 [200]: /js/app.js
+[Wed Nov 13 11:02:38 2019] 127.0.0.1:52531 [200]: /favicon.ico
+[Wed Nov 13 11:04:12 2019] 127.0.0.1:52551 [200]: /js/app.js
+[Wed Nov 13 11:04:12 2019] 127.0.0.1:52554 [200]: /css/app.css
+[Wed Nov 13 11:04:12 2019] 127.0.0.1:52555 [200]: /favicon.ico
+[Wed Nov 13 11:04:28 2019] 127.0.0.1:52560 [200]: /css/app.css
+[Wed Nov 13 11:04:28 2019] 127.0.0.1:52565 [200]: /css/blog-home.css
+[Wed Nov 13 11:04:28 2019] 127.0.0.1:52570 [200]: /js/app.js
+[Wed Nov 13 11:04:31 2019] 127.0.0.1:52580 [200]: /css/blog-post.css
+[Wed Nov 13 11:04:31 2019] 127.0.0.1:52586 [200]: /css/app.css
+[Wed Nov 13 11:04:31 2019] 127.0.0.1:52587 [200]: /js/app.js
+[Wed Nov 13 11:04:31 2019] 127.0.0.1:52588 [200]: /favicon.ico
+[Wed Nov 13 11:05:30 2019] 127.0.0.1:52604 [200]: /css/blog-post.css
+[Wed Nov 13 11:05:30 2019] 127.0.0.1:52607 [200]: /css/app.css
+[Wed Nov 13 11:05:30 2019] 127.0.0.1:52608 [200]: /js/app.js
+[Wed Nov 13 11:05:30 2019] 127.0.0.1:52609 [200]: /favicon.ico
+[Wed Nov 13 11:06:03 2019] 127.0.0.1:52616 [200]: /css/blog-post.css
+[Wed Nov 13 11:06:03 2019] 127.0.0.1:52676 [200]: /css/app.css
+[Wed Nov 13 11:06:03 2019] 127.0.0.1:52677 [200]: /js/app.js
+[Wed Nov 13 11:06:04 2019] 127.0.0.1:52678 [200]: /favicon.ico
+[Wed Nov 13 11:08:33 2019] 127.0.0.1:52738 [200]: /css/blog-post.css
+[Wed Nov 13 11:08:33 2019] 127.0.0.1:52742 [200]: /css/app.css
+[Wed Nov 13 11:08:33 2019] 127.0.0.1:52743 [200]: /js/app.js
+[Wed Nov 13 11:08:34 2019] 127.0.0.1:52746 [200]: /favicon.ico
+[Wed Nov 13 11:08:34 2019] 127.0.0.1:52748 [200]: /css/app.css
+[Wed Nov 13 11:08:34 2019] 127.0.0.1:52751 [200]: /css/blog-home.css
+[Wed Nov 13 11:08:34 2019] 127.0.0.1:52756 [200]: /js/app.js
+[Wed Nov 13 11:08:40 2019] 127.0.0.1:52779 [200]: /css/app.css
+[Wed Nov 13 11:08:40 2019] 127.0.0.1:52791 [200]: /css/blog-home.css
+[Wed Nov 13 11:08:40 2019] 127.0.0.1:52793 [200]: /js/app.js
+[Wed Nov 13 11:09:00 2019] 127.0.0.1:52893 [200]: /favicon.ico
+PS C:\xampp\htdocs\blog> php artisan storage:link
+The [public/storage] directory has been linked.
+PS C:\xampp\htdocs\blog> php artisan serve
+Laravel development server started: http://127.0.0.1:8000
+[Wed Nov 13 11:11:37 2019] 127.0.0.1:52949 [200]: /css/app.css
+[Wed Nov 13 11:11:37 2019] 127.0.0.1:52953 [200]: /css/blog-home.css
+[Wed Nov 13 11:11:37 2019] 127.0.0.1:52960 [200]: /js/app.js
+[Wed Nov 13 11:11:56 2019] 127.0.0.1:53058 [200]: /favicon.ico
+PS C:\xampp\htdocs\blog> cd public
+PS C:\xampp\htdocs\blog\public> mklink /d images ../storage/app/images
+mklink : The term 'mklink' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:1
++ mklink /d images ../storage/app/images
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\xampp\htdocs\blog\public> ln
+ln : The term 'ln' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ ln
++ ~~
+    + CategoryInfo          : ObjectNotFound: (ln:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\xampp\htdocs\blog\public> mklink
+mklink : The term 'mklink' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At line:1 char:1
++ mklink
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\xampp\htdocs\blog\public> php artisan serve
+Could not open input file: artisan
+PS C:\xampp\htdocs\blog\public> cd..
+PS C:\xampp\htdocs\blog> php artisan serve
+Laravel development server started: http://127.0.0.1:8000
+PS C:\xampp\htdocs\blog> cd public
+PS C:\xampp\htdocs\blog\public> cmd /c mklink /D images ../storage/app/images
+Invalid switch - "storage".
+PS C:\xampp\htdocs\blog\public> cmd /c mklink /D images C:\xampp\htdocs\blog\storage\app\images
+You do not have sufficient privilege to perform this operation.
+PS C:\xampp\htdocs\blog\public> cmd /c mklink /D images C:/xampp/htdocs/blog/storage/app/images
+Invalid switch - "xampp".
+PS C:\xampp\htdocs\blog\public> cmd /c mklink /D images C:\xampp\htdocs\blog\storage\app\images
+You do not have sufficient privilege to perform this operation.
+PS C:\xampp\htdocs\blog\public> runas /user:administrator "mklink args"
+Enter the password for administrator:
+Attempting to start mklink args as user "DESKTOP-J8RPL9G\administrator" ...
+RUNAS ERROR: Unable to run - mklink args
+1326: The user name or password is incorrect.
+ PS C:\xampp\htdocs\blog\public> runas /user:administrator "mklink args"
+Enter the password for administrator:
+Attempting to start mklink args as user "DESKTOP-J8RPL9G\administrator" ...
+RUNAS ERROR: Unable to run - mklink args
+1326: The user name or password is incorrect.
+ PS C:\xampp\htdocs\blog\public> runas /user:administrator "mklink args"
+Enter the password for administrator:
+Attempting to start mklink args as user "DESKTOP-J8RPL9G\administrator" ...
+RUNAS ERROR: Unable to run - mklink args
+1327: Account restrictions are preventing this user from signing in. For example: blank passwords aren't allowed, sign-in times are limited, or a policy restriction has been enforced.
+ PS C:\xampp\htdocs\blog\public> runas /user:administrator "mklink args"
+Enter the password for administrator:
+Attempting to start mklink args as user "DESKTOP-J8RPL9G\administrator" ...
+RUNAS ERROR: Unable to run - mklink args
+1326: The user name or password is incorrect.
+ PS C:\xampp\htdocs\blog\public> runas /user:administrator "mklink args"
+Enter the password for administrator:
+
+--------------run cmd administrator-------
+
+Microsoft Windows [Version 10.0.10240]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>cd C:\xampp\htdocs\blog\public
+
+C:\xampp\htdocs\blog\public>cmd /c mklink /D images C:\xampp\htdocs\blog\storage\app\images
+symbolic link created for images <<===>> C:\xampp\htdocs\blog\storage\app\images
+
+C:\xampp\htdocs\blog\public>
+-----------------------------------------------------------

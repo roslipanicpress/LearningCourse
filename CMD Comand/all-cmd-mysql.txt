@@ -1,0 +1,1159 @@
+Microsoft Windows [Version 10.0.10240]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\User>cd..
+
+C:\Users>cd..
+
+C:\>cd Program Files\MySQL\MySQL Server 5.7\bin
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 31
+Server version: 5.7.28-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database myexample;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> USE mydatabase;
+ERROR 1049 (42000): Unknown database 'mydatabase'
+mysql> create database example_db
+    ->
+    ->
+    ->
+    -> create database example_db;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create database example_db' at line 5
+mysql> use myexample
+Database changed
+mysql> CREATE TABLE pets (name VARCHAR(20), owner
+    -> VARCHAR(20), species VARCHAR(20), sex CHAR(1), birth
+    ->
+    -> CREATE TABLE pets (name VARCHAR(20), owner
+    -> VARCHAR(20), species VARCHAR(20), sex CHAR(1), birth
+    -> DATE, death DATE);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE pets (name VARCHAR(20), owner
+VARCHAR(20), species VARCHAR(20), sex' at line 4
+mysql> create table pets(name varchar(20), owner varchar(20),sex char(1), birth date death date);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'death date)' at line 1
+mysql> create table pets(name varchar(20), owner varchar(20),sex char(1), birth date death date);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'death date)' at line 1
+mysql> CREATE TABLE pets (name VARCHAR(20), ownerVARCHAR(20), species VARCHAR(20), sex CHAR(1), birthDATE, death DATE);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(20), species VARCHAR(20), sex CHAR(1), birthDATE, death DATE)' at line 1
+mysql> CREATE TABLE pets (name VARCHAR(20), ownerVARCHAR(20), species VARCHAR(20), sex CHAR(1), birthDATE, death DATE);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(20), species VARCHAR(20), sex CHAR(1), birthDATE, death DATE)' at line 1
+mysql> CREATE TABLE pets (name VARCHAR(20), owner VARCHAR(20), species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> DESCRIBE pets
+    -> DESCRIBE pets;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESCRIBE pets' at line 2
+mysql> DESCRIBE pets;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(20) | YES  |     | NULL    |       |
+| owner   | varchar(20) | YES  |     | NULL    |       |
+| species | varchar(20) | YES  |     | NULL    |       |
+| sex     | char(1)     | YES  |     | NULL    |       |
+| birth   | date        | YES  |     | NULL    |       |
+| death   | date        | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> SHOW GLOBAL VARIABLES LIKE '%datadir';
++---------------+---------------------------------------------+
+| Variable_name | Value                                       |
++---------------+---------------------------------------------+
+| datadir       | C:\ProgramData\MySQL\MySQL Server 5.7\Data\ |
++---------------+---------------------------------------------+
+1 row in set (0.01 sec)
+
+mysql> SHOW GLOBAL VARIABLES LIKE '%dir';
++---------------------------+---------------------------------------------------------+
+| Variable_name             | Value                                                   |
++---------------------------+---------------------------------------------------------+
+| basedir                   | C:\Program Files\MySQL\MySQL Server 5.7\                |
+| character_sets_dir        | C:\Program Files\MySQL\MySQL Server 5.7\share\charsets\ |
+| datadir                   | C:\ProgramData\MySQL\MySQL Server 5.7\Data\             |
+| innodb_data_home_dir      |                                                         |
+| innodb_log_group_home_dir | .\                                                      |
+| innodb_tmpdir             |                                                         |
+| lc_messages_dir           | C:\Program Files\MySQL\MySQL Server 5.7\share\          |
+| plugin_dir                | C:\Program Files\MySQL\MySQL Server 5.7\lib\plugin\     |
+| slave_load_tmpdir         | C:\Windows\SERVIC~2\NETWOR~1\AppData\Local\Temp         |
+| tmpdir                    | C:\Windows\SERVIC~2\NETWOR~1\AppData\Local\Temp         |
++---------------------------+---------------------------------------------------------+
+10 rows in set (0.01 sec)
+
+mysql> show engines
+    -> show engines;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show engines' at line 2
+mysql> SHOW ENGINES;
++--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+| Engine             | Support | Comment                                                        | Transactions | XA   | Savepoints |
++--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+| InnoDB             | DEFAULT | Supports transactions, row-level locking, and foreign keys     | YES          | YES  | YES        |
+| MRG_MYISAM         | YES     | Collection of identical MyISAM tables                          | NO           | NO   | NO         |
+| MEMORY             | YES     | Hash based, stored in memory, useful for temporary tables      | NO           | NO   | NO         |
+| BLACKHOLE          | YES     | /dev/null storage engine (anything you write to it disappears) | NO           | NO   | NO         |
+| MyISAM             | YES     | MyISAM storage engine                                          | NO           | NO   | NO         |
+| CSV                | YES     | CSV storage engine                                             | NO           | NO   | NO         |
+| ARCHIVE            | YES     | Archive storage engine                                         | NO           | NO   | NO         |
+| PERFORMANCE_SCHEMA | YES     | Performance Schema                                             | NO           | NO   | NO         |
+| FEDERATED          | NO      | Federated MySQL storage engine                                 | NULL         | NULL | NULL       |
++--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+9 rows in set (0.00 sec)
+
+mysql> CREATE TABLE example_table (id INT) ENGINE = MyISIM;
+ERROR 1286 (42000): Unknown storage engine 'MyISIM'
+mysql> CREATE TABLE example_table (id INT) ENGINE = MyISAM;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> DESCRIBE example_table;
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| id    | int(11) | YES  |     | NULL    |       |
++-------+---------+------+-----+---------+-------+
+1 row in set (0.00 sec)
+
+mysql> SHOW TABLE STATUS WHERE Name ='example_table'
+    -> SHOW TABLE STATUS WHERE Name ='example_table';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SHOW TABLE STATUS WHERE Name ='example_table'' at line 2
+mysql> SHOW TABLE STATUS WHERE Name = 'example_table';
++---------------+--------+---------+------------+------+----------------+-------------+------------------+--------------+-----------+----------------+---------------------+---------------------+------------+-------------------+----------+----------------+---------+
+| Name          | Engine | Version | Row_format | Rows | Avg_row_length | Data_length | Max_data_length  | Index_length | Data_free | Auto_increment | Create_time         | Update_time         | Check_time | Collation         | Checksum | Create_options | Comment |
++---------------+--------+---------+------------+------+----------------+-------------+------------------+--------------+-----------+----------------+---------------------+---------------------+------------+-------------------+----------+----------------+---------+
+| example_table | MyISAM |      10 | Fixed      |    0 |              0 |           0 | 1970324836974591 |         1024 |         0 |           NULL | 2019-11-05 12:00:50 | 2019-11-05 12:00:50 | NULL       | latin1_swedish_ci |     NULL |                |         |
++---------------+--------+---------+------------+------+----------------+-------------+------------------+--------------+-----------+----------------+---------------------+---------------------+------------+-------------------+----------+----------------+---------+
+1 row in set (0.00 sec)
+
+mysql> create database example_db;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SHOW TABLE STATUS WHERE Name = 'pets';
++------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-------------------+----------+----------------+---------+
+| Name | Engine | Version | Row_format | Rows | Avg_row_length | Data_length | Max_data_length | Index_length | Data_free | Auto_increment | Create_time         | Update_time | Check_time | Collation         | Checksum | Create_options | Comment |
++------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-------------------+----------+----------------+---------+
+| pets | InnoDB |      10 | Dynamic    |    0 |              0 |       16384 |               0 |            0 |         0 |           NULL | 2019-11-05 11:43:55 | NULL        | NULL       | latin1_swedish_ci |     NULL |                |         |
++------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-------------------+----------+----------------+---------+
+1 row in set (0.00 sec)
+
+mysql> CREATE TABLE  log (id INT NOT NULL, user VARCHAR(20) NOT NULL, activity VARCHAR(200) NOT NULL ENGINES = csv;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ENGINES = csv' at line 1
+mysql> CREATE TABLE  log id INT NOT NULL, user VARCHAR(20) NOT NULL, activity VARCHAR(200) NOT NULL ENGINES = csv;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id INT NOT NULL, user VARCHAR(20) NOT NULL, activity VARCHAR(200) NOT NULL ENGIN' at line 1
+mysql> CREATE TABLE  log id INT NOT NULL, user VARCHAR(20) NOT NULL, activity VARCHAR(200) NOT NULL ENGINES = csv;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id INT NOT NULL, user VARCHAR(20) NOT NULL, activity VARCHAR(200) NOT NULL ENGIN' at line 1
+mysql> SELECT DATABASE();
++------------+
+| DATABASE() |
++------------+
+| myexample  |
++------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT DATABASE(), CURRENT_DATE;
++------------+--------------+
+| DATABASE() | CURRENT_DATE |
++------------+--------------+
+| myexample  | 2019-11-05   |
++------------+--------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT DATABASE(), CURRENT_DATE;, now(), user();
++------------+--------------+
+| DATABASE() | CURRENT_DATE |
++------------+--------------+
+| myexample  | 2019-11-05   |
++------------+--------------+
+1 row in set (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' now(), user()' at line 1
+mysql> SELECT DATABASE(), CURRENT_DATE, now(), user();
++------------+--------------+---------------------+----------------+
+| DATABASE() | CURRENT_DATE | now()               | user()         |
++------------+--------------+---------------------+----------------+
+| myexample  | 2019-11-05   | 2019-11-05 12:45:48 | root@localhost |
++------------+--------------+---------------------+----------------+
+1 row in set (0.00 sec)
+
+mysql>
+mysql>
+mysql> SELECT DATABASE(), CURRENT_DATE, now(), user()
+    -> SELECT DATABASE(), CURRENT_DATE, now(), user();
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DATABASE(), CURRENT_DATE, now(), user()' at line 2
+mysql> SELECT DATABASE(), CURRENT_DATE, now(), user();
++------------+--------------+---------------------+----------------+
+| DATABASE() | CURRENT_DATE | now()               | user()         |
++------------+--------------+---------------------+----------------+
+| myexample  | 2019-11-05   | 2019-11-05 12:47:49 | root@localhost |
++------------+--------------+---------------------+----------------+
+1 row in set (0.00 sec)
+
+mysql> ^C
+mysql>
+mysql>
+mysql>
+mysql> /
+    -> ./
+    -> ''
+    ->
+    ->
+    ->
+    ->
+    -> show tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/
+./
+''
+
+
+
+
+show tables' at line 1
+mysql> show tables;
++---------------------+
+| Tables_in_myexample |
++---------------------+
+| example_table       |
+| pets                |
++---------------------+
+2 rows in set (0.00 sec)
+
+mysql> describe pets;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(20) | YES  |     | NULL    |       |
+| owner   | varchar(20) | YES  |     | NULL    |       |
+| species | varchar(20) | YES  |     | NULL    |       |
+| sex     | char(1)     | YES  |     | NULL    |       |
+| birth   | date        | YES  |     | NULL    |       |
+| death   | date        | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> LOAD DATA LOCAL INFILE "/Users/Desktop/pet.txt" INTO TABLE pets;
+ERROR 2 (HY000): File '\Users\Desktop\pet.txt' not found (Errcode: 2 - No such file or directory)
+mysql> LOAD DATA LOCAL INFILE "/Users/Desktop/pet.txt" INTO TABLE pets;
+ERROR 2 (HY000): File '\Users\Desktop\pet.txt' not found (Errcode: 2 - No such file or directory)
+mysql> LOAD DATA LOCAL INFILE "C:\Users\User\Desktop\pet.txt" INTO TABLE pets;
+ERROR 2 (HY000): File 'C:UsersUserDesktoppet.txt' not found (Errcode: 2 - No such file or directory)
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 2 rows affected, 1 warning (0.01 sec)
+Records: 2  Deleted: 0  Skipped: 0  Warnings: 1
+
+mysql> show pets;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pets' at line 1
+mysql> show pets;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pets' at line 1
+mysql> show tables;
++---------------------+
+| Tables_in_myexample |
++---------------------+
+| example_table       |
+| pets                |
++---------------------+
+2 rows in set (0.00 sec)
+
+mysql> describe pets;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(20) | YES  |     | NULL    |       |
+| owner   | varchar(20) | YES  |     | NULL    |       |
+| species | varchar(20) | YES  |     | NULL    |       |
+| sex     | char(1)     | YES  |     | NULL    |       |
+| birth   | date        | YES  |     | NULL    |       |
+| death   | date        | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 2 rows affected, 1 warning (0.01 sec)
+Records: 2  Deleted: 0  Skipped: 0  Warnings: 1
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 2 rows affected, 1 warning (0.01 sec)
+Records: 2  Deleted: 0  Skipped: 0  Warnings: 1
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.01 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.01 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> select * from pets;
++-------+-------+---------+------+------------+------------+
+| name  | owner | species | sex  | birth      | death      |
++-------+-------+---------+------+------------+------------+
+| Cat   | Rosli | NULL    | m    | 2019-11-05 | 0000-00-00 |
+| Cat 2 | Rosli | NULL    | f    | 2019-11-05 | NULL       |
+| Cat   | Rosli | NULL    | m    | 2019-11-05 | 0000-00-00 |
+| Cat 2 | Rosli | NULL    | f    | 2019-11-05 | NULL       |
+| Cat   | Rosli | NULL    | m    | 2019-11-05 | 0000-00-00 |
+| Cat 2 | Rosli | NULL    | f    | 2019-11-05 | NULL       |
+| Cat   | Rosli | NULL    | m    | 2019-11-05 | NULL       |
+| Cat   | Rosli | NULL    | m    | 2019-11-05 | NULL       |
++-------+-------+---------+------+------------+------------+
+8 rows in set (0.00 sec)
+
+mysql> truncate table pets;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> select * from pets;
+Empty set (0.00 sec)
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.01 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.00 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.01 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
++------+-------+---------+------+------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> truncate table pets;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.01 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.02 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2 | Rosli | NULL    | m    | 2019-11-05 | NULL  |
++------+-------+---------+------+------------+-------+
+2 rows in set (0.00 sec)
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2 | Rosli | NULL    | m    | 2019-11-05 | NULL  |
++------+-------+---------+------+------------+-------+
+2 rows in set (0.00 sec)
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.02 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2 | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
++------+-------+---------+------+------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2 | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
++------+-------+---------+------+------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.01 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2 | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
++------+-------+---------+------+------------+-------+
+4 rows in set (0.00 sec)
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.01 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2 | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Bird | Rosli | NULL    | f    | 2019-11-01 | NULL  |
++------+-------+---------+------+------------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2 | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Bird | Rosli | NULL    | f    | 2019-11-01 | NULL  |
++------+-------+---------+------+------------+-------+
+5 rows in set (0.00 sec)
+
+mysql> LOAD DATA LOCAL INFILE "C:/Users/User/Desktop/pet.txt" INTO TABLE pets;
+Query OK, 1 row affected (0.03 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> select * from pets;
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Cat  | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2 | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Cat3 | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Bird | Rosli | NULL    | f    | 2019-11-01 | NULL  |
+| Fish | Rosli | NULL    | M    | 2018-11-01 | NULL  |
++------+-------+---------+------+------------+-------+
+6 rows in set (0.00 sec)
+
+mysql> INSERT INTO pets Values ('Lizard','Rosli',null,'f','2019-09-09',null),('Lizard2','Rosli',null,'f','2019-09-09',null);
+Query OK, 2 rows affected (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select * from pets;
++---------+-------+---------+------+------------+-------+
+| name    | owner | species | sex  | birth      | death |
++---------+-------+---------+------+------------+-------+
+| Cat     | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2    | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3    | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Cat3    | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Bird    | Rosli | NULL    | f    | 2019-11-01 | NULL  |
+| Fish    | Rosli | NULL    | M    | 2018-11-01 | NULL  |
+| Lizard  | Rosli | NULL    | f    | 2019-09-09 | NULL  |
+| Lizard2 | Rosli | NULL    | f    | 2019-09-09 | NULL  |
++---------+-------+---------+------+------------+-------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT MAX(BIRT) AS oldest FROM pets;
+ERROR 1054 (42S22): Unknown column 'BIRT' in 'field list'
+mysql> SELECT MAX(birth) AS oldest FROM pets;
++------------+
+| oldest     |
++------------+
+| 2019-11-05 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT MIN(birth) AS oldest FROM pets;
++------------+
+| oldest     |
++------------+
+| 2018-11-01 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT VERSION();
++------------+
+| VERSION()  |
++------------+
+| 5.7.28-log |
++------------+
+1 row in set (0.00 sec)
+
+mysql> -e "SELECT VERSION()";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-e "SELECT VERSION()"' at line 1
+mysql> -e
+    -> DESCRIBE example_table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-e
+DESCRIBE example_table' at line 1
+mysql>
+mysql> -e;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-e' at line 1
+mysql> mysql -u root -p
+    -> mysql -u root -p;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p
+mysql -u root -p' at line 1
+mysql> mysql -u root -p;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p' at line 1
+mysql> select version();
++------------+
+| version()  |
++------------+
+| 5.7.28-log |
++------------+
+1 row in set (0.00 sec)
+
+mysql> describe table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table' at line 1
+mysql> describe table();
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table()' at line 1
+mysql> describe database;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
+mysql> DESCRIBE pets;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(20) | YES  |     | NULL    |       |
+| owner   | varchar(20) | YES  |     | NULL    |       |
+| species | varchar(20) | YES  |     | NULL    |       |
+| sex     | char(1)     | YES  |     | NULL    |       |
+| birth   | date        | YES  |     | NULL    |       |
+| death   | date        | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> select * from pets;
++---------+-------+---------+------+------------+-------+
+| name    | owner | species | sex  | birth      | death |
++---------+-------+---------+------+------------+-------+
+| Cat     | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2    | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3    | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Cat3    | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Bird    | Rosli | NULL    | f    | 2019-11-01 | NULL  |
+| Fish    | Rosli | NULL    | M    | 2018-11-01 | NULL  |
+| Lizard  | Rosli | NULL    | f    | 2019-09-09 | NULL  |
+| Lizard2 | Rosli | NULL    | f    | 2019-09-09 | NULL  |
++---------+-------+---------+------+------------+-------+
+8 rows in set (0.00 sec)
+
+mysql> INSERT INTO pets Values ('Tiger','Rosli',null,'f','2019-09-09',null),('Lion','Rosli',null,'f','2019-09-09',null);
+Query OK, 2 rows affected (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select * from pets;
++---------+-------+---------+------+------------+-------+
+| name    | owner | species | sex  | birth      | death |
++---------+-------+---------+------+------------+-------+
+| Cat     | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2    | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3    | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Cat3    | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Bird    | Rosli | NULL    | f    | 2019-11-01 | NULL  |
+| Fish    | Rosli | NULL    | M    | 2018-11-01 | NULL  |
+| Lizard  | Rosli | NULL    | f    | 2019-09-09 | NULL  |
+| Lizard2 | Rosli | NULL    | f    | 2019-09-09 | NULL  |
+| Tiger   | Rosli | NULL    | f    | 2019-09-09 | NULL  |
+| Lion    | Rosli | NULL    | f    | 2019-09-09 | NULL  |
++---------+-------+---------+------+------------+-------+
+10 rows in set (0.00 sec)
+
+mysql> mysql -u root -p  < "C:/Users/User/Desktop/all.sql";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p  < "C:/Users/User/Desktop/all.sql"' at line 1
+mysql> mysql -u root -p  < "C:/Users/User/Desktop/all.sql";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p  < "C:/Users/User/Desktop/all.sql"' at line 1
+mysql> mysql -u root -p  < C:/Users/User/Desktop/all.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p  < C:/Users/User/Desktop/all.sql' at line 1
+mysql> mysql -u root -p  < C:/Users/User/Desktop/all.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p  < C:/Users/User/Desktop/all.sql' at line 1
+mysql> mysql -u root -p  > C:/Users/User/Desktop/all.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p  > C:/Users/User/Desktop/all.sql' at line 1
+mysql> mysql -u root -p -e > C:/Users/User/Desktop/all.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p -e > C:/Users/User/Desktop/all.sql' at line 1
+mysql> mysql -u root -p pets -e > C:/Users/User/Desktop/all.sql;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p pets -e > C:/Users/User/Desktop/all.sql' at line 1
+mysql> mysql -u root -p pets -e "SELECT * FROM pets";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p pets -e "SELECT * FROM pets"' at line 1
+mysql> mysql -u root -p -e "SELECT * FROM pets";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p -e "SELECT * FROM pets"' at line 1
+mysql> mysql -u root -p -e "SELECT * FROM pets";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p -e "SELECT * FROM pets"' at line 1
+mysql> mysql -u root -p -e SELECT * FROM pets;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p -e SELECT * FROM pets' at line 1
+mysql> mysql -u root -p -e
+    -> mysql -u root -p;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql -u root -p -e
+mysql -u root -p' at line 1
+mysql> mysql -u root -p -e
+    ->
+    -> mysql -u root -p "SHOW DATABASE"
+    -> mysql -u root -p "SHOW DA^C
+mysql> quit
+Bye
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 37
+Server version: 5.7.28-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> mysql -u root -p "SHOW DATABASE"
+    -> ^C
+mysql> SHOW DATABASE;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DATABASE' at line 1
+mysql> SHOW DATABASE;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DATABASE' at line 1
+mysql> SHOW DATABASE;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DATABASE' at line 1
+mysql> SHOW DATABASE;^C
+mysql> quit;
+Bye
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysql -u root -p
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 39
+Server version: 5.7.28-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| example_db         |
+| myexample          |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+8 rows in set (0.00 sec)
+
+mysql> describe world;
+ERROR 1046 (3D000): No database selected
+mysql> DESCRIBE example_table;
+ERROR 1046 (3D000): No database selected
+mysql> DESCRIBE pets;
+ERROR 1046 (3D000): No database selected
+mysql> use example_db
+Database changed
+mysql> use world
+Database changed
+mysql> describe table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table' at line 1
+mysql> use example_db
+Database changed
+mysql> use example_db;
+Database changed
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| example_db         |
+| myexample          |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+8 rows in set (0.00 sec)
+
+mysql> use myexample
+Database changed
+mysql> show tables;
++---------------------+
+| Tables_in_myexample |
++---------------------+
+| example_table       |
+| pets                |
++---------------------+
+2 rows in set (0.00 sec)
+
+mysql> SHOW example_table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'example_table' at line 1
+mysql> select * from example_table
+    -> select * from example_table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select * from example_table' at line 2
+mysql> use example_table
+ERROR 1049 (42000): Unknown database 'example_table'
+mysql> use example_table;
+ERROR 1049 (42000): Unknown database 'example_table'
+mysql> show pets;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pets' at line 1
+mysql> select * from pets;
++---------+-------+---------+------+------------+-------+
+| name    | owner | species | sex  | birth      | death |
++---------+-------+---------+------+------------+-------+
+| Cat     | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat2    | Rosli | NULL    | m    | 2019-11-05 | NULL  |
+| Cat3    | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Cat3    | Rosli | NULL    | f    | 2019-11-03 | NULL  |
+| Bird    | Rosli | NULL    | f    | 2019-11-01 | NULL  |
+| Fish    | Rosli | NULL    | M    | 2018-11-01 | NULL  |
+| Lizard  | Rosli | NULL    | f    | 2019-09-09 | NULL  |
+| Lizard2 | Rosli | NULL    | f    | 2019-09-09 | NULL  |
+| Tiger   | Rosli | NULL    | f    | 2019-09-09 | NULL  |
+| Lion    | Rosli | NULL    | f    | 2019-09-09 | NULL  |
++---------+-------+---------+------+------------+-------+
+10 rows in set (0.00 sec)
+
+mysql> select * from pets\G;
+*************************** 1. row ***************************
+   name: Cat
+  owner: Rosli
+species: NULL
+    sex: m
+  birth: 2019-11-05
+  death: NULL
+*************************** 2. row ***************************
+   name: Cat2
+  owner: Rosli
+species: NULL
+    sex: m
+  birth: 2019-11-05
+  death: NULL
+*************************** 3. row ***************************
+   name: Cat3
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-11-03
+  death: NULL
+*************************** 4. row ***************************
+   name: Cat3
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-11-03
+  death: NULL
+*************************** 5. row ***************************
+   name: Bird
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-11-01
+  death: NULL
+*************************** 6. row ***************************
+   name: Fish
+  owner: Rosli
+species: NULL
+    sex: M
+  birth: 2018-11-01
+  death: NULL
+*************************** 7. row ***************************
+   name: Lizard
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-09-09
+  death: NULL
+*************************** 8. row ***************************
+   name: Lizard2
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-09-09
+  death: NULL
+*************************** 9. row ***************************
+   name: Tiger
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-09-09
+  death: NULL
+*************************** 10. row ***************************
+   name: Lion
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-09-09
+  death: NULL
+10 rows in set (0.00 sec)
+
+ERROR:
+No query specified
+
+mysql> select * from pets where name = 'Lion';
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Lion | Rosli | NULL    | f    | 2019-09-09 | NULL  |
++------+-------+---------+------+------------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from pets where name = 'Lion'\G;
+*************************** 1. row ***************************
+   name: Lion
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-09-09
+  death: NULL
+1 row in set (0.00 sec)
+
+ERROR:
+No query specified
+
+mysql> select * from pets where name = 'Lion';
++------+-------+---------+------+------------+-------+
+| name | owner | species | sex  | birth      | death |
++------+-------+---------+------+------------+-------+
+| Lion | Rosli | NULL    | f    | 2019-09-09 | NULL  |
++------+-------+---------+------+------------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from pets where name = 'Lion'\G;
+*************************** 1. row ***************************
+   name: Lion
+  owner: Rosli
+species: NULL
+    sex: f
+  birth: 2019-09-09
+  death: NULL
+1 row in set (0.00 sec)
+
+ERROR:
+No query specified
+
+mysql> select * from pets w^C
+mysql> quit
+Bye
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqladmin -u root -p ping
+Enter password: ****
+mysqld is alive
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqladmin -u root -p create database2
+Enter password: ****
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqladmin -u root -p processlist
+Enter password: ****
++----+------+-----------------+----+---------+------+----------+------------------+
+| Id | User | Host            | db | Command | Time | State    | Info             |
++----+------+-----------------+----+---------+------+----------+------------------+
+| 35 | root | localhost:62454 |    | Sleep   | 460  |          |                  |
+| 36 | root | localhost:62455 |    | Sleep   | 460  |          |                  |
+| 42 | root | localhost:63637 |    | Query   | 0    | starting | show processlist |
++----+------+-----------------+----+---------+------+----------+------------------+
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqladmin -u root -p status
+Enter password: ****
+Uptime: 20257  Threads: 3  Questions: 7276  Slow queries: 0  Opens: 179  Flush tables: 1  Open tables: 161  Queries per second avg: 0.359
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqladmin -u root -p proc stat
+Enter password: ****
++----+------+-----------------+----+---------+------+----------+------------------+
+| Id | User | Host            | db | Command | Time | State    | Info             |
++----+------+-----------------+----+---------+------+----------+------------------+
+| 35 | root | localhost:62454 |    | Sleep   | 81   |          |                  |
+| 36 | root | localhost:62455 |    | Sleep   | 81   |          |                  |
+| 44 | root | localhost:63658 |    | Query   | 0    | starting | show processlist |
++----+------+-----------------+----+---------+------+----------+------------------+
+Uptime: 20395  Threads: 3  Questions: 7281  Slow queries: 0  Opens: 179  Flush tables: 1  Open tables: 161  Queries per second avg: 0.356
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqladmin -u root -p
+mysqladmin  Ver 8.42 Distrib 5.7.28, for Win64 on x86_64
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Administration program for the mysqld daemon.
+Usage: mysqladmin [OPTIONS] command command....
+  --bind-address=name IP address to bind to.
+  -c, --count=#       Number of iterations to make. This works with -i
+                      (--sleep) only.
+  -#, --debug[=#]     This is a non-debug version. Catch this and exit.
+  --debug-check       This is a non-debug version. Catch this and exit.
+  --debug-info        This is a non-debug version. Catch this and exit.
+  -f, --force         Don't ask for confirmation on drop database; with
+                      multiple commands, continue even if an error occurs.
+  -C, --compress      Use compression in server/client protocol.
+  --character-sets-dir=name
+                      Directory for character set files.
+  --default-character-set=name
+                      Set the default character set.
+  -?, --help          Display this help and exit.
+  -h, --host=name     Connect to host.
+  -b, --no-beep       Turn off beep on error.
+  -p, --password[=name]
+                      Password to use when connecting to server. If password is
+                      not given it's asked from the tty.
+  -W, --pipe          Use named pipes to connect to server.
+  -P, --port=#        Port number to use for connection or 0 for default to, in
+                      order of preference, my.cnf, $MYSQL_TCP_PORT,
+                      /etc/services, built-in default (3306).
+  --protocol=name     The protocol to use for connection (tcp, socket, pipe,
+                      memory).
+  -r, --relative      Show difference between current and previous values when
+                      used with -i. Currently only works with extended-status.
+  --secure-auth       Refuse client connecting to server if it uses old
+                      (pre-4.1.1) protocol. Deprecated. Always TRUE
+  --shared-memory-base-name=name
+                      Base name of shared memory.
+  -s, --silent        Silently exit if one can't connect to server.
+  -S, --socket=name   The socket file to use for connection.
+  -i, --sleep=#       Execute commands repeatedly with a sleep between.
+  --ssl-mode=name     SSL connection mode.
+  --ssl               Deprecated. Use --ssl-mode instead.
+                      (Defaults to on; use --skip-ssl to disable.)
+  --ssl-verify-server-cert
+                      Deprecated. Use --ssl-mode=VERIFY_IDENTITY instead.
+  --ssl-ca=name       CA file in PEM format.
+  --ssl-capath=name   CA directory.
+  --ssl-cert=name     X509 cert in PEM format.
+  --ssl-cipher=name   SSL cipher to use.
+  --ssl-key=name      X509 key in PEM format.
+  --ssl-crl=name      Certificate revocation list.
+  --ssl-crlpath=name  Certificate revocation list path.
+  --tls-version=name  TLS version to use, permitted values are: TLSv1, TLSv1.1,
+                      TLSv1.2
+  --server-public-key-path=name
+                      File path to the server public RSA key in PEM format.
+  --get-server-public-key
+                      Get server public key
+  -u, --user=name     User for login if not current user.
+  -v, --verbose       Write more information.
+  -V, --version       Output version information and exit.
+  -E, --vertical      Print output vertically. Is similar to --relative, but
+                      prints output vertically.
+  -w, --wait[=#]      Wait and retry if connection is down.
+  --connect-timeout=#
+  --shutdown-timeout=#
+  --plugin-dir=name   Directory for client-side plugins.
+  --default-auth=name Default authentication client-side plugin to use.
+  --enable-cleartext-plugin
+                      Enable/disable the clear text authentication plugin.
+  --show-warnings     Show warnings after execution
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}  Value (after reading options)
+--------------------------------- ----------------------------------------
+bind-address                      (No default value)
+count                             0
+force                             FALSE
+compress                          FALSE
+character-sets-dir                (No default value)
+default-character-set             auto
+host                              (No default value)
+no-beep                           FALSE
+port                              0
+relative                          FALSE
+secure-auth                       TRUE
+shared-memory-base-name           (No default value)
+socket                            (No default value)
+sleep                             0
+ssl                               TRUE
+ssl-verify-server-cert            FALSE
+ssl-ca                            (No default value)
+ssl-capath                        (No default value)
+ssl-cert                          (No default value)
+ssl-cipher                        (No default value)
+ssl-key                           (No default value)
+ssl-crl                           (No default value)
+ssl-crlpath                       (No default value)
+tls-version                       (No default value)
+server-public-key-path            (No default value)
+get-server-public-key             FALSE
+user                              root
+verbose                           FALSE
+vertical                          FALSE
+connect-timeout                   43200
+shutdown-timeout                  3600
+plugin-dir                        (No default value)
+default-auth                      (No default value)
+enable-cleartext-plugin           FALSE
+show-warnings                     FALSE
+
+Default options are read from the following files in the given order:
+C:\Windows\my.ini C:\Windows\my.cnf C:\my.ini C:\my.cnf C:\Program Files\MySQL\MySQL Server 5.7\my.ini C:\Program Files\MySQL\MySQL Server 5.7\my.cnf
+The following groups are read: mysqladmin client
+The following options may be given as the first argument:
+--print-defaults        Print the program argument list and exit.
+--no-defaults           Don't read default options from any option file,
+                        except for login file.
+--defaults-file=#       Only read default options from the given file #.
+--defaults-extra-file=# Read this file after the global files are read.
+--defaults-group-suffix=#
+                        Also read groups with concat(group, suffix)
+--login-path=#          Read this path from the login file.
+
+Where command is a one or more of: (Commands may be shortened)
+  create databasename   Create a new database
+  debug                 Instruct server to write debug information to log
+  drop databasename     Delete a database and all its tables
+  extended-status       Gives an extended status message from the server
+  flush-hosts           Flush all cached hosts
+  flush-logs            Flush all logs
+  flush-status          Clear status variables
+  flush-tables          Flush all tables
+  flush-threads         Flush the thread cache
+  flush-privileges      Reload grant tables (same as reload)
+  kill id,id,...        Kill mysql threads
+  password [new-password] Change old password to new-password in current format
+  ping                  Check if mysqld is alive
+  processlist           Show list of active threads in server
+  reload                Reload grant tables
+  refresh               Flush all tables and close and open logfiles
+  shutdown              Take server down
+  status                Gives a short status message from the server
+  start-slave           Start slave
+  stop-slave            Stop slave
+  variables             Prints variables available
+  version               Get version info from server
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 45
+Server version: 5.7.28-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> processlist
+    -> processlist;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'processlist
+processlist' at line 1
+mysql> exit;
+Bye
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqldump -u root -p --all-database > backup1.sql
+Access is denied.
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqldump -u root -p --all-database > C:/Users/User/Desktop/backup1.sql
+mysqldump: [ERROR] unknown option '--all-database'
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqldump -u root -p --all-databases > C:/Users/User/Desktop/backup1.sql
+Enter password: ****
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqldump -u root -p --databases example_db --add-drop-database --add-drop-table  > C:/Users/User/Desktop/backup-only.sql
+Enter password: ****
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 48
+Server version: 5.7.28-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> quit
+Bye
+ 
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysqldump -u root -p --databases myexample --add-drop-database --add-drop-table  > C:/Users/User/Desktop/backup-only.sql
+Enter password: ****
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>cd..
+
+C:\Program Files\MySQL\MySQL Server 5.7>cd..
+
+C:\Program Files\MySQL>cd..
+
+C:\Program Files>cd..
+
+C:\>cd Users
+
+C:\Users>cd desktop
+The system cannot find the path specified.
+
+C:\Users>cd Desktop
+The system cannot find the path specified.
+
+C:\Users>cd User
+
+C:\Users\User>cd Desktop
+
+C:\Users\User\Desktop>mysql -u root -p
+'mysql' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User\Desktop>mysql -u root -p
+'mysql' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User\Desktop>cd..
+
+C:\Users\User>cd..
+
+C:\Users>cd..
+
+C:\>
+C:\>cd Program Files
+
+C:\Program Files>
+C:\Program Files>cd MySQL
+
+C:\Program Files\MySQL>
+C:\Program Files\MySQL>cd MySQL Server 5.7
+
+C:\Program Files\MySQL\MySQL Server 5.7>cd bin
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 50
+Server version: 5.7.28-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
